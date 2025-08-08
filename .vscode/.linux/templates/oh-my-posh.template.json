@@ -1,0 +1,114 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"segments": [
+				{
+					"template": "\u256d\u2500 ",
+					"foreground": "#ffffff",
+					"type": "shell",
+					"style": "plain"
+				},
+				{
+					"template": "PROJECT_TITLE",
+					"foreground": "COLOR_TEXT",
+					"type": "shell",
+					"style": "plain"
+				},
+				{
+					"properties": {
+						"folder_icon": "\uf07b ",
+						"home_icon": "\ue617",
+						"style": "folder"
+					},
+					"template": " {{ .Location | replace (env \"PROJECT_ENV\") \"\" }}",
+					"foreground": "COLOR_HIGHLIGHT",
+					"type": "path",
+					"style": "plain"
+				},
+				{
+					"foreground": "COLOR_TEXT",
+					"background": "COLOR_ACCENT",
+					"style": "diamond",
+					"leading_diamond": " \ue0b6",
+					"properties": {
+						"branch_icon": "\ue725 ",
+						"fetch_status": true,
+						"fetch_upstream_icon": true
+					},
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uf046 {{ .Staging.String }}</>{{ end }} ",
+					"type": "git",
+					"background_templates": [
+						"{{ if or (.Working.Changed) (.Staging.Changed) }}COLOR_ACCENT_LIGHTER{{ end }}",
+						"{{ if and (gt .Ahead 0) (gt .Behind 0) }}COLOR_HIGHLIGHT{{ end }}",
+						"{{ if gt .Ahead 0 }}COLOR_TEXT{{ end }}",
+						"{{ if gt .Behind 0 }}COLOR_TEXT{{ end }}"
+					],
+					"trailing_diamond": "\ue0b4 "
+				},
+				{
+					"properties": {
+						"style": "roundrock",
+						"threshold": 0
+					},
+					"template": " {{ .FormattedMs }}",
+					"foreground": "COLOR_TEXT",
+					"type": "executiontime",
+					"style": "plain"
+				},
+				{
+					"properties": {
+						"linux": "\ue712",
+						"macos": "\ue711",
+						"windows": "\ue70f"
+					},
+					"template": " {{.Icon}}",
+					"foreground": "COLOR_TEXT",
+					"type": "os",
+					"style": "plain"
+				},
+				{
+					"properties": {
+						"fetch_package_manager": true,
+						"npm_icon": " <#158415>\ue5fa</> "
+					},
+					"template": " \ue718 {{ .Full }}",
+					"foreground": "#158415",
+					"type": "node",
+					"style": "plain"
+				},
+				{
+					"template": " \ue77f {{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }}",
+					"foreground": "#2261dd",
+					"type": "dotnet",
+					"style": "plain"
+				}
+			]
+		},
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"segments": [
+				{
+					"template": "\u2570\u2500",
+					"foreground": "COLOR_TEXT",
+					"type": "text",
+					"style": "plain"
+				},
+				{
+					"properties": {
+						"always_enabled": true
+					},
+					"template": "\ueab6 ",
+					"foreground": "COLOR_TEXT",
+					"type": "status",
+					"style": "plain"
+				}
+			],
+			"newline": true
+		}
+	],
+	"version": 3
+}

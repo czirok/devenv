@@ -1,0 +1,20 @@
+COLOR_ACCENT;COLOR_ACCENT_LIGHTER;COLOR_HIGHLIGHT;COLOR_TEXT;COLOR_NAME
+#2c0707;#580e0e;#f1f1a7;#e5e5e5;Night Ruby
+#2c1307;#58260e;#f1f1a7;#e5e5e5;Cinnamon
+#2c2007;#58400e;#f1f1a7;#e5e5e5;Antique Bronze
+#2c2c07;#58580e;#f1f1a7;#e5e5e5;Sunset Yellow
+#202c07;#40580e;#f1f1a7;#e5e5e5;Forest Green
+#132c07;#26580e;#f1f1a7;#e5e5e5;Oak Bark
+#072c07;#0e580e;#f1f1a7;#e5e5e5;Pine Needle Green
+#072c13;#0e5826;#f1f1a7;#e5e5e5;Mint Green
+#072c20;#0e5840;#f1f1a7;#e5e5e5;Ocean Depth
+#072c2c;#0e5858;#f1f1a7;#e5e5e5;Steel Blue
+#07202c;#0e4058;#f1f1a7;#e5e5e5;Deep Teal
+#07132c;#0e2658;#f1f1a7;#e5e5e5;Storm Cloud
+#07072c;#0e0e58;#f1f1a7;#e5e5e5;Midnight Depth
+#13072c;#260e58;#f1f1a7;#e5e5e5;Night Lavender
+#20072c;#400e58;#f1f1a7;#e5e5e5;Night Violet
+#2c072c;#580e58;#f1f1a7;#e5e5e5;Amber Purple
+#2c0720;#580e40;#f1f1a7;#e5e5e5;Burgundy Red
+#2c0713;#580e26;#f1f1a7;#e5e5e5;Cherry
+#1a1a1a;#333333;#f1f1a7;#e5e5e5;Carbon Black

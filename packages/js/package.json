@@ -1,0 +1,43 @@
+{
+	"name": "@blazor/js",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Blazor javascript library",
+	"author": "Ferenc Czirok",
+	"license": "MIT",
+	"homepage": "https://github.com/czirok/devenv/",
+	"repository": {
+		"directory": "packages/js",
+		"type": "git",
+		"url": "git+https://github.com/czirok/devenv.git"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=24.3.0"
+	},
+	"scripts": {
+		"js": "rollup --config=rollup.dev.ts --configPlugin=rollup-plugin-esbuild && pnpm copy",
+		"js-dist": "rollup --config=rollup.dist.ts --configPlugin=rollup-plugin-esbuild && pnpm copy",
+		"js-dev": "rollup --config=rollup.dev.ts --configPlugin=rollup-plugin-esbuild --watch",
+		"copy": "cpy dist/* ../../dist/js/ --flat"
+	},
+	"dependencies": {
+		"@blazor/js": "workspace:*"
+	},
+	"devDependencies": {
+		"@blazor/js": "workspace:*",
+		"rollup": "^4.44.1",
+		"rollup-plugin-esbuild": "^6.2.1"
+	}
+}

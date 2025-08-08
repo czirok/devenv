@@ -1,0 +1,8 @@
+[/]
+bold-is-bright=true
+cell-height-scale=1.0
+custom-command='bash -c "cd $PROJECT_ENV && exec bash --rcfile $PROJECT_ENV/.vscode/.linux/.bashrc"'
+label='PROJECT_TITLE'
+opacity=0.9
+palette='COLOR_NAME_SPACELESS'
+use-custom-command=true

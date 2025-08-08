@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=PROJECT_TITLE
+Exec=ptyxis -s --new-window --tab-with-profile=PROJECT_ID
+Icon=PROJECT_ID
+Terminal=false
+Categories=Utility;TerminalEmulator;

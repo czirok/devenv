@@ -1,0 +1,29 @@
+{
+    "name": "@blazor/assets",
+    "version": "1.0.0",
+    "description": "Compiled CSS and JS assets for Blazor projects",
+    "author": "Ferenc Czirok",
+    "license": "MIT",
+    "homepage": "https://github.com/czirok/devenv/",
+    "publishConfig": {
+        "access": "public"
+    },    
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/czirok/devenv.git"
+    },
+    "files": [
+        "css/",
+        "js/"
+    ],
+    "engines": {
+        "node": ">=24.3.0"
+    },
+    "keywords": [
+        "blazor",
+        "bootstrap",
+        "css",
+        "javascript",
+        "ui"
+    ]
+}

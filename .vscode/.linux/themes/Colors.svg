@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="900">
+  <rect width="100" height="100" y="800" fill="#2c0707"/>
+  <rect width="100" height="100" x="1200" y="800" fill="#07072c"/>
+  <rect width="100" height="100" x="1100" y="800" fill="#07132c"/>
+  <rect width="100" height="100" x="1300" y="800" fill="#13072c"/>
+  <rect width="100" height="100" x="1400" y="800" fill="#20072c"/>
+  <rect width="100" height="100" x="1500" y="800" fill="#2c072c"/>
+  <rect width="100" height="100" x="1600" y="800" fill="#2c0720"/>
+  <rect width="100" height="100" x="1700" y="800" fill="#2c0713"/>
+  <rect width="100" height="100" x="1800" y="800" fill="#1a1a1a"/>
+  <rect width="100" height="100" x="200" y="800" fill="#2c2007"/>
+  <rect width="100" height="100" x="100" y="800" fill="#2c1307"/>
+  <rect width="100" height="100" x="300" y="800" fill="#2c2c07"/>
+  <rect width="100" height="100" x="400" y="800" fill="#202c07"/>
+  <rect width="100" height="100" x="500" y="800" fill="#132c07"/>
+  <rect width="100" height="100" x="600" y="800" fill="#072c07"/>
+  <rect width="100" height="100" x="700" y="800" fill="#072c13"/>
+  <rect width="100" height="100" x="800" y="800" fill="#072c20"/>
+  <rect width="100" height="100" x="900" y="800" fill="#072c2c"/>
+  <rect width="100" height="100" x="1000" y="800" fill="#07202c"/>
+  <rect width="100" height="100" y="700" fill="#580e0e"/>
+  <rect width="100" height="100" x="1200" y="700" fill="#0e0e58"/>
+  <rect width="100" height="100" x="1100" y="700" fill="#0e2658"/>
+  <rect width="100" height="100" x="1300" y="700" fill="#260e58"/>
+  <rect width="100" height="100" x="1400" y="700" fill="#400e58"/>
+  <rect width="100" height="100" x="1500" y="700" fill="#580e58"/>
+  <rect width="100" height="100" x="1600" y="700" fill="#580e40"/>
+  <rect width="100" height="100" x="1700" y="700" fill="#580e26"/>
+  <rect width="100" height="100" x="1800" y="700" fill="#333"/>
+  <rect width="100" height="100" x="200" y="700" fill="#58400e"/>
+  <rect width="100" height="100" x="100" y="700" fill="#58260e"/>
+  <rect width="100" height="100" x="300" y="700" fill="#58580e"/>
+  <rect width="100" height="100" x="400" y="700" fill="#40580e"/>
+  <rect width="100" height="100" x="500" y="700" fill="#26580e"/>
+  <rect width="100" height="100" x="600" y="700" fill="#0e580e"/>
+  <rect width="100" height="100" x="700" y="700" fill="#0e5826"/>
+  <rect width="100" height="100" x="800" y="700" fill="#0e5840"/>
+  <rect width="100" height="100" x="900" y="700" fill="#0e5858"/>
+  <rect width="100" height="100" x="1000" y="700" fill="#0e4058"/>
+  <rect width="100" height="100" y="600" fill="#841515"/>
+  <rect width="100" height="100" x="1200" y="600" fill="#151584"/>
+  <rect width="100" height="100" x="1100" y="600" fill="#153984"/>
+  <rect width="100" height="100" x="1300" y="600" fill="#391584"/>
+  <rect width="100" height="100" x="1400" y="600" fill="#601584"/>
+  <rect width="100" height="100" x="1500" y="600" fill="#841584"/>
+  <rect width="100" height="100" x="1600" y="600" fill="#841560"/>
+  <rect width="100" height="100" x="1700" y="600" fill="#841539"/>
+  <rect width="100" height="100" x="1800" y="600" fill="#4d4d4d"/>
+  <rect width="100" height="100" x="200" y="600" fill="#846015"/>
+  <rect width="100" height="100" x="100" y="600" fill="#843915"/>
+  <rect width="100" height="100" x="300" y="600" fill="#848415"/>
+  <rect width="100" height="100" x="400" y="600" fill="#608415"/>
+  <rect width="100" height="100" x="500" y="600" fill="#398415"/>
+  <rect width="100" height="100" x="600" y="600" fill="#158415"/>
+  <rect width="100" height="100" x="700" y="600" fill="#158439"/>
+  <rect width="100" height="100" x="800" y="600" fill="#158460"/>
+  <rect width="100" height="100" x="900" y="600" fill="#158484"/>
+  <rect width="100" height="100" x="1000" y="600" fill="#156084"/>
+  <rect width="100" height="100" y="500" fill="#b01c1c"/>
+  <rect width="100" height="100" x="1200" y="500" fill="#1c1cb0"/>
+  <rect width="100" height="100" x="1100" y="500" fill="#1c4cb0"/>
+  <rect width="100" height="100" x="1300" y="500" fill="#4c1cb0"/>
+  <rect width="100" height="100" x="1400" y="500" fill="#801cb0"/>
+  <rect width="100" height="100" x="1500" y="500" fill="#b01cb0"/>
+  <rect width="100" height="100" x="1600" y="500" fill="#b01c80"/>
+  <rect width="100" height="100" x="1700" y="500" fill="#b01c4c"/>
+  <rect width="100" height="100" x="1800" y="500" fill="#666"/>
+  <rect width="100" height="100" x="200" y="500" fill="#b0801c"/>
+  <rect width="100" height="100" x="100" y="500" fill="#b04c1c"/>
+  <rect width="100" height="100" x="300" y="500" fill="#b0b01c"/>
+  <rect width="100" height="100" x="400" y="500" fill="#80b01c"/>
+  <rect width="100" height="100" x="500" y="500" fill="#4cb01c"/>
+  <rect width="100" height="100" x="600" y="500" fill="#1cb01c"/>
+  <rect width="100" height="100" x="700" y="500" fill="#1cb04c"/>
+  <rect width="100" height="100" x="800" y="500" fill="#1cb080"/>
+  <rect width="100" height="100" x="900" y="500" fill="#1cb0b0"/>
+  <rect width="100" height="100" x="1000" y="500" fill="#1c80b0"/>
+  <rect width="100" height="100" y="400" fill="#dc2323"/>
+  <rect width="100" height="100" x="1200" y="400" fill="#2323dc"/>
+  <rect width="100" height="100" x="1100" y="400" fill="#235fdc"/>
+  <rect width="100" height="100" x="1300" y="400" fill="#5f23dc"/>
+  <rect width="100" height="100" x="1400" y="400" fill="#a023dc"/>
+  <rect width="100" height="100" x="1500" y="400" fill="#dc23dc"/>
+  <rect width="100" height="100" x="1600" y="400" fill="#dc23a0"/>
+  <rect width="100" height="100" x="1700" y="400" fill="#dc235f"/>
+  <rect width="100" height="100" x="1800" y="400" fill="gray"/>
+  <rect width="100" height="100" x="200" y="400" fill="#dca023"/>
+  <rect width="100" height="100" x="100" y="400" fill="#dc5f23"/>
+  <rect width="100" height="100" x="300" y="400" fill="#dcdc23"/>
+  <rect width="100" height="100" x="400" y="400" fill="#a0dc23"/>
+  <rect width="100" height="100" x="500" y="400" fill="#5fdc23"/>
+  <rect width="100" height="100" x="600" y="400" fill="#23dc23"/>
+  <rect width="100" height="100" x="700" y="400" fill="#23dc5f"/>
+  <rect width="100" height="100" x="800" y="400" fill="#23dca0"/>
+  <rect width="100" height="100" x="900" y="400" fill="#23dcdc"/>
+  <rect width="100" height="100" x="1000" y="400" fill="#23a0dc"/>
+  <rect width="100" height="100" y="300" fill="#e34f4f"/>
+  <rect width="100" height="100" x="1200" y="300" fill="#4f4fe3"/>
+  <rect width="100" height="100" x="1100" y="300" fill="#4f7fe3"/>
+  <rect width="100" height="100" x="1300" y="300" fill="#7f4fe3"/>
+  <rect width="100" height="100" x="1400" y="300" fill="#b34fe3"/>
+  <rect width="100" height="100" x="1500" y="300" fill="#e34fe3"/>
+  <rect width="100" height="100" x="1600" y="300" fill="#e34fb3"/>
+  <rect width="100" height="100" x="1700" y="300" fill="#e34f7f"/>
+  <rect width="100" height="100" x="1800" y="300" fill="#999"/>
+  <rect width="100" height="100" x="200" y="300" fill="#e3b34f"/>
+  <rect width="100" height="100" x="100" y="300" fill="#e37f4f"/>
+  <rect width="100" height="100" x="300" y="300" fill="#e3e34f"/>
+  <rect width="100" height="100" x="400" y="300" fill="#b3e34f"/>
+  <rect width="100" height="100" x="500" y="300" fill="#7fe34f"/>
+  <rect width="100" height="100" x="600" y="300" fill="#4fe34f"/>
+  <rect width="100" height="100" x="700" y="300" fill="#4fe37f"/>
+  <rect width="100" height="100" x="800" y="300" fill="#4fe3b3"/>
+  <rect width="100" height="100" x="900" y="300" fill="#4fe3e3"/>
+  <rect width="100" height="100" x="1000" y="300" fill="#4fb3e3"/>
+  <rect width="100" height="100" y="200" fill="#ea7b7b"/>
+  <rect width="100" height="100" x="1200" y="200" fill="#7b7bea"/>
+  <rect width="100" height="100" x="1100" y="200" fill="#7b9fea"/>
+  <rect width="100" height="100" x="1300" y="200" fill="#9f7bea"/>
+  <rect width="100" height="100" x="1400" y="200" fill="#c67bea"/>
+  <rect width="100" height="100" x="1500" y="200" fill="#ea7bea"/>
+  <rect width="100" height="100" x="1600" y="200" fill="#ea7bc6"/>
+  <rect width="100" height="100" x="1700" y="200" fill="#ea7b9f"/>
+  <rect width="100" height="100" x="1800" y="200" fill="#b2b2b2"/>
+  <rect width="100" height="100" x="200" y="200" fill="#eac67b"/>
+  <rect width="100" height="100" x="100" y="200" fill="#ea9f7b"/>
+  <rect width="100" height="100" x="300" y="200" fill="#eaea7b"/>
+  <rect width="100" height="100" x="400" y="200" fill="#c6ea7b"/>
+  <rect width="100" height="100" x="500" y="200" fill="#9fea7b"/>
+  <rect width="100" height="100" x="600" y="200" fill="#7bea7b"/>
+  <rect width="100" height="100" x="700" y="200" fill="#7bea9f"/>
+  <rect width="100" height="100" x="800" y="200" fill="#7beac6"/>
+  <rect width="100" height="100" x="900" y="200" fill="#7beaea"/>
+  <rect width="100" height="100" x="1000" y="200" fill="#7bc6ea"/>
+  <rect width="100" height="100" y="100" fill="#f1a7a7"/>
+  <rect width="100" height="100" x="1200" y="100" fill="#a7a7f1"/>
+  <rect width="100" height="100" x="1100" y="100" fill="#a7bff1"/>
+  <rect width="100" height="100" x="1300" y="100" fill="#bfa7f1"/>
+  <rect width="100" height="100" x="1400" y="100" fill="#d9a7f1"/>
+  <rect width="100" height="100" x="1500" y="100" fill="#f1a7f1"/>
+  <rect width="100" height="100" x="1600" y="100" fill="#f1a7d9"/>
+  <rect width="100" height="100" x="1700" y="100" fill="#f1a7bf"/>
+  <rect width="100" height="100" x="1800" y="100" fill="#ccc"/>
+  <rect width="100" height="100" x="200" y="100" fill="#f1d9a7"/>
+  <rect width="100" height="100" x="100" y="100" fill="#f1bfa7"/>
+  <rect width="100" height="100" x="300" y="100" fill="#f1f1a7"/>
+  <rect width="100" height="100" x="400" y="100" fill="#d9f1a7"/>
+  <rect width="100" height="100" x="500" y="100" fill="#bff1a7"/>
+  <rect width="100" height="100" x="600" y="100" fill="#a7f1a7"/>
+  <rect width="100" height="100" x="700" y="100" fill="#a7f1bf"/>
+  <rect width="100" height="100" x="800" y="100" fill="#a7f1d9"/>
+  <rect width="100" height="100" x="900" y="100" fill="#a7f1f1"/>
+  <rect width="100" height="100" x="1000" y="100" fill="#a7d9f1"/>
+  <rect width="100" height="100" fill="#f8d3d3"/>
+  <rect width="100" height="100" x="1200" fill="#d3d3f8"/>
+  <rect width="100" height="100" x="1100" fill="#d3dff8"/>
+  <rect width="100" height="100" x="1300" fill="#dfd3f8"/>
+  <rect width="100" height="100" x="1400" fill="#ecd3f8"/>
+  <rect width="100" height="100" x="1500" fill="#f8d3f8"/>
+  <rect width="100" height="100" x="1600" fill="#f8d3ec"/>
+  <rect width="100" height="100" x="1700" fill="#f8d3df"/>
+  <rect width="100" height="100" x="1800" fill="#e5e5e5"/>
+  <rect width="100" height="100" x="200" fill="#f8ecd3"/>
+  <rect width="100" height="100" x="100" fill="#f8dfd3"/>
+  <rect width="100" height="100" x="300" fill="#f8f8d3"/>
+  <rect width="100" height="100" x="400" fill="#ecf8d3"/>
+  <rect width="100" height="100" x="500" fill="#dff8d3"/>
+  <rect width="100" height="100" x="600" fill="#d3f8d3"/>
+  <rect width="100" height="100" x="700" fill="#d3f8df"/>
+  <rect width="100" height="100" x="800" fill="#d3f8ec"/>
+  <rect width="100" height="100" x="900" fill="#d3f8f8"/>
+  <rect width="100" height="100" x="1000" fill="#d3ecf8"/>
+</svg>

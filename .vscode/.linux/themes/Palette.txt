@@ -1,0 +1,19 @@
+#2c0707;#580e0e;#841515;#b01c1c;#dc2323;#e34f4f;#ea7b7b;#f1a7a7;#f8d3d3;Night Ruby
+#07072c;#0e0e58;#151584;#1c1cb0;#2323dc;#4f4fe3;#7b7bea;#a7a7f1;#d3d3f8;Midnight Depth
+#07132c;#0e2658;#153984;#1c4cb0;#235fdc;#4f7fe3;#7b9fea;#a7bff1;#d3dff8;Storm Cloud
+#13072c;#260e58;#391584;#4c1cb0;#5f23dc;#7f4fe3;#9f7bea;#bfa7f1;#dfd3f8;Night Lavender
+#20072c;#400e58;#601584;#801cb0;#a023dc;#b34fe3;#c67bea;#d9a7f1;#ecd3f8;Night Violet
+#2c072c;#580e58;#841584;#b01cb0;#dc23dc;#e34fe3;#ea7bea;#f1a7f1;#f8d3f8;Amber Purple
+#2c0720;#580e40;#841560;#b01c80;#dc23a0;#e34fb3;#ea7bc6;#f1a7d9;#f8d3ec;Burgundy Red
+#2c0713;#580e26;#841539;#b01c4c;#dc235f;#e34f7f;#ea7b9f;#f1a7bf;#f8d3df;Cherry
+#1a1a1a;#333333;#4d4d4d;#666666;#808080;#999999;#b2b2b2;#cccccc;#e5e5e5;Carbon Black
+#2c2007;#58400e;#846015;#b0801c;#dca023;#e3b34f;#eac67b;#f1d9a7;#f8ecd3;Antique Bronze
+#2c1307;#58260e;#843915;#b04c1c;#dc5f23;#e37f4f;#ea9f7b;#f1bfa7;#f8dfd3;Cinnamon
+#2c2c07;#58580e;#848415;#b0b01c;#dcdc23;#e3e34f;#eaea7b;#f1f1a7;#f8f8d3;Sunset Yellow
+#202c07;#40580e;#608415;#80b01c;#a0dc23;#b3e34f;#c6ea7b;#d9f1a7;#ecf8d3;Forest Green
+#132c07;#26580e;#398415;#4cb01c;#5fdc23;#7fe34f;#9fea7b;#bff1a7;#dff8d3;Oak Bark
+#072c07;#0e580e;#158415;#1cb01c;#23dc23;#4fe34f;#7bea7b;#a7f1a7;#d3f8d3;Pine Needle Green
+#072c13;#0e5826;#158439;#1cb04c;#23dc5f;#4fe37f;#7bea9f;#a7f1bf;#d3f8df;Mint Green
+#072c20;#0e5840;#158460;#1cb080;#23dca0;#4fe3b3;#7beac6;#a7f1d9;#d3f8ec;Ocean Depth
+#072c2c;#0e5858;#158484;#1cb0b0;#23dcdc;#4fe3e3;#7beaea;#a7f1f1;#d3f8f8;Steel Blue
+#07202c;#0e4058;#156084;#1c80b0;#23a0dc;#4fb3e3;#7bc6ea;#a7d9f1;#d3ecf8;Deep Teal

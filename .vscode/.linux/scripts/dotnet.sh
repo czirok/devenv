@@ -105,45 +105,11 @@ install_net10aspnet() {
     install_aspnetcore 10
 }
 
-# setup_dotnet_tools() {
-#     print_step "Setting up .NET tools and certificates..."
-    
-#     local dotnet_dir="$PROJECT_ROOT/.vscode/.linux/.dotnet"
-    
-#     # Set PATH and DOTNET_ROOT for this function
-#     export PATH="$dotnet_dir:$PATH"
-#     export DOTNET_ROOT="$dotnet_dir"
-
-#     # Add nuget source
-#     print_step "Configuring NuGet sources..."
-#     redirect_output dotnet nuget add source "$dotnet_dir/library-packs/" --name "Apps" || true
-#     print_success "NuGet source configured"
-    
-#     # Install dotnet tools
-#     print_step "Installing .NET tools..."
-#     redirect_output dotnet tool install dotnet-outdated-tool --tool-path "$dotnet_dir" || true
-#     redirect_output dotnet tool install linux-dev-certs --tool-path "$dotnet_dir" || true
-#     print_success ".NET tools installed"
-
-#     # Setup development certificates
-#     print_step "Setting up development certificates..."
-#     local cert_file="/etc/ca-certificates/trust-source/anchors/aspnet-dev-$USER.crt"
-
-#     if [[ ! -f "$cert_file" ]]; then
-#         print_step "Installing development certificate (sudo required)..."
-#         redirect_output "$dotnet_dir/dotnet" linux-dev-certs install || true
-#         print_success "Development certificate installed"
-
-#         # Setup NSS database for certificates
-#         mkdir -p "$HOME/.pki/nssdb" >/dev/null 2>&1
-#         if command -v certutil >/dev/null 2>&1; then
-#             redirect_output certutil -d sql:"$HOME/.pki/nssdb" -A -t "C,," -n localhost -i "/etc/ca-certificates/trust-source/anchors/aspnet-dev-$USER.crt" || true
-#         fi
-#         print_success "NSS database configured"
-#     else
-#         print_step "Development certificate already exists, skipping installation"
-#     fi
-# }
+install_maui() {
+    print_step "Setting up .NET MAUI workload..."
+    dotnet workload install maui-android wasm-tools
+    print_success ".NET MAUI workload set up"
+}
 
 setup_dotnet_tools() {
     print_step "Setting up .NET tools and certificates..."
@@ -163,6 +129,9 @@ setup_dotnet_tools() {
     print_step "Installing .NET tools..."
     redirect_output dotnet tool install dotnet-outdated-tool --tool-path "$dotnet_dir" || true
     redirect_output dotnet tool install linux-dev-certs --tool-path "$dotnet_dir" || true
+    redirect_output dotnet tool install dotnet-ef --tool-path "$dotnet_dir" || true
+    redirect_output dotnet tool install Microsoft.Web.LibraryManager.Cli --tool-path "$dotnet_dir" || true
+    redirect_output dotnet tool install Microsoft.dotnet-scaffold --tool-path "$dotnet_dir" || true
     print_success ".NET tools installed"
 
     # Setup development certificates - platform specific
@@ -241,10 +210,10 @@ uninstall_dotnet() {
 
     if [[ -f "$install_script" ]]; then
         print_step "Removing .NET installer script..."
-        rm "$install_script"
+        trash-put "$install_script"
         print_success ".NET installer script removed"
     fi
 
-    rm -rf "$dotnet_dir" || true
+    trash-put "$dotnet_dir" || true
     print_success ".NET uninstalled successfully"
 }

@@ -3,6 +3,15 @@ check_dependencies() {
 
     local all_ok=true
 
+    # Check trash-cli
+    if command -v trash >/dev/null 2>&1; then
+        local trash_version=$(trash --version | head -n1)
+        print_success "Trash CLI found (version: $trash_version)"
+    else
+        print_error "Trash CLI not found - install Trash CLI"
+        all_ok=false
+    fi
+
     # Check bc
     if command -v bc >/dev/null 2>&1; then
         local bc_version=$(bc --version | head -n1)

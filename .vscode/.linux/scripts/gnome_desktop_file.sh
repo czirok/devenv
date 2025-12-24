@@ -25,7 +25,7 @@ uninstall_gnome_desktop_file() {
 
     # Remove the desktop file if it exists
     if [[ -f "$desktop_target" ]]; then
-        rm "$desktop_target"
+        trash-put "$desktop_target"
         print_success "Desktop file ${PROJECT_ID}.desktop removed successfully"
     else
         print_warning "Desktop file ${PROJECT_ID}.desktop not found"

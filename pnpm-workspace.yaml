@@ -1,6 +1,11 @@
+shellEmulator: true
+trustPolicy: no-downgrade
 packages:
   - packages/*
-
+overrides:
+  eslint: ^9.39.2
+  glob: ^13.0.0
+  chokidar: ^5.0.0
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild

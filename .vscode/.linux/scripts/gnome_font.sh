@@ -442,7 +442,7 @@ uninstall_gnome_font() {
                     print_success "REMOVING: $font_path"
                 fi
                 
-                rm -f "$font_path"
+                trash-put "$font_path"
                 
                 # Verify removal
                 if [[ -f "$font_path" ]]; then
@@ -468,7 +468,7 @@ uninstall_gnome_font() {
     
     # Cleanup state file
     if [[ -f "$font_state" ]]; then
-        rm -f "$font_state"
+        trash-put "$font_state"
         if [[ "$VERBOSE" == "true" ]]; then
             print_success "State file cleaned up"
         fi

@@ -18,7 +18,7 @@
 					"style": "plain"
 				},
 				{
-					"properties": {
+					"options": {
 						"folder_icon": "\uf07b ",
 						"home_icon": "\ue617",
 						"style": "folder"
@@ -33,7 +33,7 @@
 					"background": "COLOR_ACCENT",
 					"style": "diamond",
 					"leading_diamond": " \ue0b6",
-					"properties": {
+					"options": {
 						"branch_icon": "\ue725 ",
 						"fetch_status": true,
 						"fetch_upstream_icon": true
@@ -49,7 +49,7 @@
 					"trailing_diamond": "\ue0b4 "
 				},
 				{
-					"properties": {
+					"options": {
 						"style": "roundrock",
 						"threshold": 0
 					},
@@ -59,7 +59,7 @@
 					"style": "plain"
 				},
 				{
-					"properties": {
+					"options": {
 						"linux": "\ue712",
 						"macos": "\ue711",
 						"windows": "\ue70f"
@@ -70,7 +70,7 @@
 					"style": "plain"
 				},
 				{
-					"properties": {
+					"options": {
 						"fetch_package_manager": true,
 						"npm_icon": " <#158415>\ue5fa</> "
 					},
@@ -98,7 +98,7 @@
 					"style": "plain"
 				},
 				{
-					"properties": {
+					"options": {
 						"always_enabled": true
 					},
 					"template": "\ueab6 ",

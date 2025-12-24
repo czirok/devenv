@@ -26,7 +26,7 @@ uninstall_pnpm() {
     print_step "Uninstalling pnpm..."
 
     if [[ -f "$HOME/.local/share/pnpm/pnpm" ]]; then
-        rm -rf "$HOME/.local/share/pnpm"
+        trash-put "$HOME/.local/share/pnpm"
         print_success "pnpm uninstalled successfully"
     else
         print_warning "pnpm not found, skipping uninstallation"

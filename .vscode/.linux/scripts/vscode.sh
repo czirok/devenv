@@ -27,14 +27,13 @@ uninstall_vscode() {
     local vscode_settings="$PROJECT_ROOT/.vscode/settings.json"
     
     if [[ -f "$vscode_settings" ]]; then
-        rm "$vscode_settings"
+        trash-put "$vscode_settings"
         print_success "VSCode settings uninstalled successfully"
     else
         print_warning "VSCode settings file not found: $vscode_settings"
     fi
 
-    rm -rf "$PROJECT_ROOT/.vscode/.extensions"
-    rm -rf "$PROJECT_ROOT/.vscode/.user.data"
-
+    trash-put "$PROJECT_ROOT/.vscode/.extensions"
+    trash-put "$PROJECT_ROOT/.vscode/.user.data"
     print_success "VSCode extensions and user data removed successfully"
 }

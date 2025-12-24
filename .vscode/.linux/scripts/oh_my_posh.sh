@@ -44,7 +44,7 @@ uninstall_oh_my_posh() {
     local install_dir="$PROJECT_ROOT/.vscode/.linux"
     
     if [[ -f "$install_dir/oh-my-posh" ]]; then
-        rm "$install_dir/oh-my-posh"
+        trash-put "$install_dir/oh-my-posh"
         print_success "Oh My Posh uninstalled successfully"
     else
         print_warning "Oh My Posh not found in $install_dir"
@@ -52,7 +52,7 @@ uninstall_oh_my_posh() {
     
     local config_file="$SCRIPT_DIR/oh-my-posh.json"
     if [[ -f "$config_file" ]]; then
-        rm "$config_file"
+        trash-put "$config_file"
         print_success "Oh My Posh configuration removed successfully"
     else
         print_warning "Oh My Posh configuration file not found: $config_file"

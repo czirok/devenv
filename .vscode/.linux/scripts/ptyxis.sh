@@ -66,7 +66,7 @@ install_ptyxis() {
     print_step "New profile list written back to dconf key: $key"
 
     dconf load "/org/gnome/Ptyxis/Profiles/${PROJECT_ID}/" < "$dconf_config"
-    rm -f "$dconf_config"  # Remove the original template
+    trash-put "$dconf_config"  # Remove the original template
 
     print_success "Ptyxis profile configured"
 }

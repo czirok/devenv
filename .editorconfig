@@ -6,17 +6,11 @@ indent_size = 2
 end_of_line = crlf
 indent_style = space
 
-[*.props]
-tab_width = 2
-indent_size = 2
-end_of_line = crlf
+[*.{sln,props,targets,csproj,csproj.user,pubxml,nuspec,pkgproj}]
+insert_final_newline = true
+end_of_line = lf
 indent_style = space
-
-[*.csproj]
-tab_width = 2
-indent_size = 2
-end_of_line = crlf
-indent_style = space
+indent_size = 4
 
 [*.razor]
 tab_width = 3

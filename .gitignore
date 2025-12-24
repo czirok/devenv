@@ -7,6 +7,7 @@
 .vscode/.linux/.bashrc
 .vscode/.linux/.font_state
 .vscode/.linux/dotnet-install.sh
+.vscode/.linux/install.sh
 .vscode/.linux/oh-my-posh
 .vscode/.linux/oh-my-posh.json
 
@@ -31,6 +32,7 @@ apps/**/[Oo]bj/
 **/publish
 **/node_modules/
 packages/**/dist
+**/BenchmarkDotNet.Artifacts/
 
 # Release archives
 devenv.tar.bz2

@@ -2,28 +2,28 @@
 	'use strict';
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
-	var __defProp$2 = Object.defineProperty;
-	var __defNormalProp$2 = (obj, key, value) => key in obj ? __defProp$2(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-	var __publicField$2 = (obj, key, value) => __defNormalProp$2(obj, typeof key !== "symbol" ? key + "" : key, value);
+	var __defProp$3 = Object.defineProperty;
+	var __defNormalProp$3 = (obj, key, value) => key in obj ? __defProp$3(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+	var __publicField$3 = (obj, key, value) => __defNormalProp$3(obj, typeof key !== "symbol" ? key + "" : key, value);
 	const _OffcanvasSwipe = class _OffcanvasSwipe {
 	  constructor() {
-	    __publicField$2(this, "swipeStartTime", /* @__PURE__ */ new Date(0));
-	    __publicField$2(this, "swipeStartX", 0);
-	    __publicField$2(this, "swipeStartY", 0);
-	    __publicField$2(this, "swipeStartElement");
-	    __publicField$2(this, "swipeElement");
-	    __publicField$2(this, "offcanvasElement");
-	    __publicField$2(this, "isInitialized", false);
-	    __publicField$2(this, "isTouch", false);
+	    __publicField$3(this, "swipeStartTime", /* @__PURE__ */ new Date(0));
+	    __publicField$3(this, "swipeStartX", 0);
+	    __publicField$3(this, "swipeStartY", 0);
+	    __publicField$3(this, "swipeStartElement");
+	    __publicField$3(this, "swipeElement");
+	    __publicField$3(this, "offcanvasElement");
+	    __publicField$3(this, "isInitialized", false);
+	    __publicField$3(this, "isTouch", false);
 	    // Bound event handlers to enable proper removal
-	    __publicField$2(this, "boundHandlePointerDown");
-	    __publicField$2(this, "boundHandlePointerUp");
-	    __publicField$2(this, "boundHandleTouchStart");
-	    __publicField$2(this, "boundHandleTouchEnd");
+	    __publicField$3(this, "boundHandlePointerDown");
+	    __publicField$3(this, "boundHandlePointerUp");
+	    __publicField$3(this, "boundHandleTouchStart");
+	    __publicField$3(this, "boundHandleTouchEnd");
 	    this.boundHandlePointerDown = this.handlePointerDown.bind(this);
 	    this.boundHandlePointerUp = this.handlePointerUp.bind(this);
 	    this.boundHandleTouchStart = this.handleTouchStart.bind(this);
@@ -191,23 +191,23 @@
 	    }
 	  }
 	};
-	__publicField$2(_OffcanvasSwipe, "MinHorizontalMove", 100);
-	__publicField$2(_OffcanvasSwipe, "MaxVerticalMove", 50);
-	__publicField$2(_OffcanvasSwipe, "Millisecond", 300);
+	__publicField$3(_OffcanvasSwipe, "MinHorizontalMove", 100);
+	__publicField$3(_OffcanvasSwipe, "MaxVerticalMove", 50);
+	__publicField$3(_OffcanvasSwipe, "Millisecond", 300);
 	let OffcanvasSwipe = _OffcanvasSwipe;
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
-	var __defProp$1 = Object.defineProperty;
-	var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-	var __publicField$1 = (obj, key, value) => __defNormalProp$1(obj, typeof key !== "symbol" ? key + "" : key, value);
+	var __defProp$2 = Object.defineProperty;
+	var __defNormalProp$2 = (obj, key, value) => key in obj ? __defProp$2(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+	var __publicField$2 = (obj, key, value) => __defNormalProp$2(obj, typeof key !== "symbol" ? key + "" : key, value);
 	class BackToTop {
 	  constructor() {
-	    __publicField$1(this, "dotNetObjRef");
-	    __publicField$1(this, "scrollEventHandler");
+	    __publicField$2(this, "dotNetObjRef");
+	    __publicField$2(this, "scrollEventHandler");
 	    this.scrollEventHandler = async () => {
 	      await this.dotNetObjRef?.invokeMethodAsync("OnUpdate", window.scrollY);
 	    };
@@ -228,7 +228,47 @@
 	}
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
+	  * Copyright 2023-2025 Ferenc Czirok
+	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
+	  */
+	var __defProp$1 = Object.defineProperty;
+	var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+	var __publicField$1 = (obj, key, value) => __defNormalProp$1(obj, typeof key !== "symbol" ? key + "" : key, value);
+	class ScrollAnim {
+	  constructor() {
+	    __publicField$1(this, "isInitialized", false);
+	    __publicField$1(this, "observer", null);
+	  }
+	  initialize() {
+	    if (this.isInitialized) {
+	      return false;
+	    }
+	    const elems = document.querySelectorAll(".anim");
+	    this.observer = new IntersectionObserver((entries, obs) => {
+	      entries.forEach((entry) => {
+	        if (entry.isIntersecting && entry.target instanceof HTMLElement) {
+	          const side = entry.target.dataset.anim ?? "b";
+	          entry.target.classList.add(`enable-${side}`);
+	          obs.unobserve(entry.target);
+	        }
+	      });
+	    }, { threshold: 0.2 });
+	    elems.forEach((el) => this.observer.observe(el));
+	    this.isInitialized = true;
+	    return true;
+	  }
+	  dispose() {
+	    if (this.isInitialized && this.observer) {
+	      this.observer.disconnect();
+	      this.observer = null;
+	      this.isInitialized = false;
+	    }
+	  }
+	}
+
+	/**
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
@@ -239,8 +279,10 @@
 	  constructor() {
 	    __publicField(this, "OffcanvasSwipe");
 	    __publicField(this, "BackToTop");
+	    __publicField(this, "ScrollAnim");
 	    this.OffcanvasSwipe = new OffcanvasSwipe();
 	    this.BackToTop = new BackToTop();
+	    this.ScrollAnim = new ScrollAnim();
 	  }
 	}
 	window.BlazorBody = new BlazorBody();

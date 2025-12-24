@@ -24,7 +24,7 @@ uninstall_gnome_icon() {
 
     # Remove the icon if it exists
     if [[ -f "$icon_target" ]]; then
-        rm "$icon_target"
+        trash-put "$icon_target"
         print_success "Icon ${PROJECT_ID}.svg removed successfully"
     else
         print_warning "Icon ${PROJECT_ID}.svg not found"

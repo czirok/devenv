@@ -1,0 +1,47 @@
+.screenrc
+
+# hardstatus alwayslastline '%{#ffffff;#2c0707}[ %{#ea7b7b;#2c0707}%H%{#ffffff;#2c0707} ][ %?%-Lw%?%{#eaea7b;#2c0707}%n*%f %t%?(%u)%?%{#ffffff;#2c0707}%?%+Lw%? ]%=[ Free %{#ea7b7b;#2c0707}%0`%{#ffffff;#2c0707} ][ %{#ffffff;#2c0707}%Y.%m.%d %{#ffffff;#2c0707}%0c %D %{#ffffff;#2c0707}]' # #ea7b7b #2c0707 Night Ruby
+# hardstatus alwayslastline '%{#ffffff;#2c1307}[ %{#ea9f7b;#2c1307}%H%{#ffffff;#2c1307} ][ %?%-Lw%?%{#eaea7b;#2c1307}%n*%f %t%?(%u)%?%{#ffffff;#2c1307}%?%+Lw%? ]%=[ Free %{#ea9f7b;#2c1307}%0`%{#ffffff;#2c1307} ][ %{#ffffff;#2c1307}%Y.%m.%d %{#ffffff;#2c1307}%0c %D %{#ffffff;#2c1307}]' # #ea9f7b #2c1307 Cinnamon
+# hardstatus alwayslastline '%{#ffffff;#2c2007}[ %{#eac67b;#2c2007}%H%{#ffffff;#2c2007} ][ %?%-Lw%?%{#eaea7b;#2c2007}%n*%f %t%?(%u)%?%{#ffffff;#2c2007}%?%+Lw%? ]%=[ Free %{#eac67b;#2c2007}%0`%{#ffffff;#2c2007} ][ %{#ffffff;#2c2007}%Y.%m.%d %{#ffffff;#2c2007}%0c %D %{#ffffff;#2c2007}]' # #eac67b #2c2007 Antique Bronze
+# hardstatus alwayslastline '%{#ffffff;#2c2c07}[ %{#eaea7b;#2c2c07}%H%{#ffffff;#2c2c07} ][ %?%-Lw%?%{#eaea7b;#2c2c07}%n*%f %t%?(%u)%?%{#ffffff;#2c2c07}%?%+Lw%? ]%=[ Free %{#eaea7b;#2c2c07}%0`%{#ffffff;#2c2c07} ][ %{#ffffff;#2c2c07}%Y.%m.%d %{#ffffff;#2c2c07}%0c %D %{#ffffff;#2c2c07}]' # #eaea7b #2c2c07 Sunset Yellow
+# hardstatus alwayslastline '%{#ffffff;#202c07}[ %{#c6ea7b;#202c07}%H%{#ffffff;#202c07} ][ %?%-Lw%?%{#eaea7b;#202c07}%n*%f %t%?(%u)%?%{#ffffff;#202c07}%?%+Lw%? ]%=[ Free %{#c6ea7b;#202c07}%0`%{#ffffff;#202c07} ][ %{#ffffff;#202c07}%Y.%m.%d %{#ffffff;#202c07}%0c %D %{#ffffff;#202c07}]' # #c6ea7b #202c07 Forest Green
+# hardstatus alwayslastline '%{#ffffff;#132c07}[ %{#9fea7b;#132c07}%H%{#ffffff;#132c07} ][ %?%-Lw%?%{#eaea7b;#132c07}%n*%f %t%?(%u)%?%{#ffffff;#132c07}%?%+Lw%? ]%=[ Free %{#9fea7b;#132c07}%0`%{#ffffff;#132c07} ][ %{#ffffff;#132c07}%Y.%m.%d %{#ffffff;#132c07}%0c %D %{#ffffff;#132c07}]' # #9fea7b #132c07 Oak Bark
+# hardstatus alwayslastline '%{#ffffff;#072c07}[ %{#7bea7b;#072c07}%H%{#ffffff;#072c07} ][ %?%-Lw%?%{#eaea7b;#072c07}%n*%f %t%?(%u)%?%{#ffffff;#072c07}%?%+Lw%? ]%=[ Free %{#7bea7b;#072c07}%0`%{#ffffff;#072c07} ][ %{#ffffff;#072c07}%Y.%m.%d %{#ffffff;#072c07}%0c %D %{#ffffff;#072c07}]' # #7bea7b #072c07 Pine Needle Green
+# hardstatus alwayslastline '%{#ffffff;#072c13}[ %{#7bea9f;#072c13}%H%{#ffffff;#072c13} ][ %?%-Lw%?%{#eaea7b;#072c13}%n*%f %t%?(%u)%?%{#ffffff;#072c13}%?%+Lw%? ]%=[ Free %{#7bea9f;#072c13}%0`%{#ffffff;#072c13} ][ %{#ffffff;#072c13}%Y.%m.%d %{#ffffff;#072c13}%0c %D %{#ffffff;#072c13}]' # #7bea9f #072c13 Mint Green
+# hardstatus alwayslastline '%{#ffffff;#072c20}[ %{#7beac6;#072c20}%H%{#ffffff;#072c20} ][ %?%-Lw%?%{#eaea7b;#072c20}%n*%f %t%?(%u)%?%{#ffffff;#072c20}%?%+Lw%? ]%=[ Free %{#7beac6;#072c20}%0`%{#ffffff;#072c20} ][ %{#ffffff;#072c20}%Y.%m.%d %{#ffffff;#072c20}%0c %D %{#ffffff;#072c20}]' # #7beac6 #072c20 Ocean Depth
+# hardstatus alwayslastline '%{#ffffff;#072c2c}[ %{#7beaea;#072c2c}%H%{#ffffff;#072c2c} ][ %?%-Lw%?%{#eaea7b;#072c2c}%n*%f %t%?(%u)%?%{#ffffff;#072c2c}%?%+Lw%? ]%=[ Free %{#7beaea;#072c2c}%0`%{#ffffff;#072c2c} ][ %{#ffffff;#072c2c}%Y.%m.%d %{#ffffff;#072c2c}%0c %D %{#ffffff;#072c2c}]' # #7beaea #072c2c Steel Blue
+# hardstatus alwayslastline '%{#ffffff;#07202c}[ %{#7bc6ea;#07202c}%H%{#ffffff;#07202c} ][ %?%-Lw%?%{#eaea7b;#07202c}%n*%f %t%?(%u)%?%{#ffffff;#07202c}%?%+Lw%? ]%=[ Free %{#7bc6ea;#07202c}%0`%{#ffffff;#07202c} ][ %{#ffffff;#07202c}%Y.%m.%d %{#ffffff;#07202c}%0c %D %{#ffffff;#07202c}]' # #7bc6ea #07202c Deep Teal
+# hardstatus alwayslastline '%{#ffffff;#07132c}[ %{#7b9fea;#07132c}%H%{#ffffff;#07132c} ][ %?%-Lw%?%{#eaea7b;#07132c}%n*%f %t%?(%u)%?%{#ffffff;#07132c}%?%+Lw%? ]%=[ Free %{#7b9fea;#07132c}%0`%{#ffffff;#07132c} ][ %{#ffffff;#07132c}%Y.%m.%d %{#ffffff;#07132c}%0c %D %{#ffffff;#07132c}]' # #7b9fea #07132c Storm Cloud
+hardstatus alwayslastline '%{#ffffff;#07072c}[ %{#7b7bea;#07072c}%H%{#ffffff;#07072c} ][ %?%-Lw%?%{#eaea7b;#07072c}%n*%f %t%?(%u)%?%{#ffffff;#07072c}%?%+Lw%? ]%=[ Free %{#7b7bea;#07072c}%0`%{#ffffff;#07072c} ][ %{#ffffff;#07072c}%Y.%m.%d %{#ffffff;#07072c}%0c %D %{#ffffff;#07072c}]' # #7b7bea #07072c Midnight Depth
+# hardstatus alwayslastline '%{#ffffff;#13072c}[ %{#9f7bea;#13072c}%H%{#ffffff;#13072c} ][ %?%-Lw%?%{#eaea7b;#13072c}%n*%f %t%?(%u)%?%{#ffffff;#13072c}%?%+Lw%? ]%=[ Free %{#9f7bea;#13072c}%0`%{#ffffff;#13072c} ][ %{#ffffff;#13072c}%Y.%m.%d %{#ffffff;#13072c}%0c %D %{#ffffff;#13072c}]' # #9f7bea #13072c Night Lavender
+# hardstatus alwayslastline '%{#ffffff;#20072c}[ %{#c67bea;#20072c}%H%{#ffffff;#20072c} ][ %?%-Lw%?%{#eaea7b;#20072c}%n*%f %t%?(%u)%?%{#ffffff;#20072c}%?%+Lw%? ]%=[ Free %{#c67bea;#20072c}%0`%{#ffffff;#20072c} ][ %{#ffffff;#20072c}%Y.%m.%d %{#ffffff;#20072c}%0c %D %{#ffffff;#20072c}]' # #c67bea #20072c Night Violet
+# hardstatus alwayslastline '%{#ffffff;#2c072c}[ %{#ea7bea;#2c072c}%H%{#ffffff;#2c072c} ][ %?%-Lw%?%{#eaea7b;#2c072c}%n*%f %t%?(%u)%?%{#ffffff;#2c072c}%?%+Lw%? ]%=[ Free %{#ea7bea;#2c072c}%0`%{#ffffff;#2c072c} ][ %{#ffffff;#2c072c}%Y.%m.%d %{#ffffff;#2c072c}%0c %D %{#ffffff;#2c072c}]' # #ea7bea #2c072c Amber Purple
+# hardstatus alwayslastline '%{#ffffff;#2c0720}[ %{#ea7bc6;#2c0720}%H%{#ffffff;#2c0720} ][ %?%-Lw%?%{#eaea7b;#2c0720}%n*%f %t%?(%u)%?%{#ffffff;#2c0720}%?%+Lw%? ]%=[ Free %{#ea7bc6;#2c0720}%0`%{#ffffff;#2c0720} ][ %{#ffffff;#2c0720}%Y.%m.%d %{#ffffff;#2c0720}%0c %D %{#ffffff;#2c0720}]' # #ea7bc6 #2c0720 Burgundy Red
+# hardstatus alwayslastline '%{#ffffff;#2c0713}[ %{#ea7b9f;#2c0713}%H%{#ffffff;#2c0713} ][ %?%-Lw%?%{#eaea7b;#2c0713}%n*%f %t%?(%u)%?%{#ffffff;#2c0713}%?%+Lw%? ]%=[ Free %{#ea7b9f;#2c0713}%0`%{#ffffff;#2c0713} ][ %{#ffffff;#2c0713}%Y.%m.%d %{#ffffff;#2c0713}%0c %D %{#ffffff;#2c0713}]' # #ea7b9f #2c0713 Cherry
+# hardstatus alwayslastline '%{#ffffff;#1a1a1a}[ %{#b2b2b2;#1a1a1a}%H%{#ffffff;#1a1a1a} ][ %?%-Lw%?%{#eaea7b;#1a1a1a}%n*%f %t%?(%u)%?%{#ffffff;#1a1a1a}%?%+Lw%? ]%=[ Free %{#b2b2b2;#1a1a1a}%0`%{#ffffff;#1a1a1a} ][ %{#ffffff;#1a1a1a}%Y.%m.%d %{#ffffff;#1a1a1a}%0c %D %{#ffffff;#1a1a1a}]' # #b2b2b2 #1a1a1a Carbon Black
+
+.bashrc
+
+# NIGHT_RUBY='\[\033[38;2;234;123;123m\]'        # #ea7b7b
+# CINNAMON='\[\033[38;2;234;159;123m\]'          # #ea9f7b
+# ANTIQUE_BRONZE='\[\033[38;2;234;198;123m\]'    # #eac67b
+SUNSET_YELLOW='\[\033[38;2;234;234;123m\]'     # #eaea7b
+# FOREST_GREEN='\[\[\033[38;2;198;234;123m\]'    # #c6ea7b
+# OAK_BARK='\[\033[38;2;159;234;123m\]'          # #9fea7b
+# PINE_NEEDLE_GREEN='\[\033[38;2;123;234;123m\]' # #7bea7b
+# MINT_GREEN='\[\033[38;2;123;234;159m\]'        # #7bea9f
+# OCEAN_DEPTH='\[\033[38;2;123;234;198m\]'       # #7beac6
+# STEEL_BLUE='\[\033[38;2;123;234;234m\]'        # #7beaea
+# DEEP_TEAL='\[\033[38;2;123;198;234m\]'         # #7bc6ea
+# STORM_CLOUD='\[\033[38;2;123;159;234m\]'       # #7b9fea
+MIDNIGHT_DEPTH='\[\033[38;2;123;123;234m\]'    # #7b7bea
+# NIGHT_LAVENDER='\[\033[38;2;159;123;234m\]'    # #9f7bea
+# NIGHT_VIOLET='\[\033[38;2;198;123;234m\]'      # #c67bea
+# AMBER_PURPLE='\[\033[38;2;234;123;234m\]'      # #ea7bea
+# BURGUNDY_RED='\[\033[38;2;234;123;198m\]'      # #ea7bc6
+# CHERRY='\[\033[38;2;234;123;159m\]'            # #ea7b9f
+# CARBON_BLACK='\[\033[38;2;178;178;178m\]'      # #b2b2b2
+# WHITE='\[\033[38;2;255;255;255m\]'             # #ffffff
+
+RESET='\[\033[0m\]'
+PS1="${MIDNIGHT_DEPTH}\u@\h${RESET}:${SUNSET_YELLOW}\w${RESET}\$ "

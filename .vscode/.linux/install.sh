@@ -59,6 +59,7 @@ show_usage() {
     echo "  -8a,  --net8aspnet      Install .NET 8 ASP.NET Core"
     echo "  -9a,  --net9aspnet      Install .NET 9 ASP.NET Core"
     echo "  -10a, --net10aspnet     Install .NET 10 ASP.NET Core"
+    echo "  --maui                  Install .NET MAUI workload"
     echo ""
     echo "Uninstall options:"
     echo "  --uninstall-all              Uninstall all components"
@@ -107,9 +108,9 @@ parse_arguments() {
             --all)
                 INSTALL_VSCODE=true
                 INSTALL_NET10SDK=true
-                INSTALL_NET8RUNTIME=true
+                INSTALL_NET8RUNTIME=false
                 INSTALL_NET9RUNTIME=true
-                INSTALL_NET8ASPNET=true
+                INSTALL_NET8ASPNET=false
                 INSTALL_NET9ASPNET=true
                 shift
                 ;;
@@ -204,6 +205,10 @@ parse_arguments() {
                 ;;
             -10a|--net10aspnet)
                 INSTALL_NET10ASPNET=true
+                shift
+                ;;
+            --maui)
+                INSTALL_MAUI=true
                 shift
                 ;;
             -it|--install-themes)
@@ -506,7 +511,7 @@ main() {
     if [[ "$INSTALL_NET10ASPNET" == "true" ]]; then
         install_net10aspnet
     fi
-    
+
     # Setup dotnet tools if any .NET component was installed
     if 
         [[ "$INSTALL_NET8SDK" == "true" ]] ||
@@ -519,6 +524,10 @@ main() {
         [[ "$INSTALL_NET9ASPNET" == "true" ]] ||
         [[ "$INSTALL_NET10ASPNET" == "true" ]]; then
         setup_dotnet_tools
+    fi
+
+    if [[ "$INSTALL_MAUI" == "true" ]]; then
+        install_maui
     fi
 
     # Uninstall components if requested

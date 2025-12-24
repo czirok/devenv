@@ -26,7 +26,7 @@ uninstall_fnm() {
     print_step "Uninstalling fnm..."
 
     if [[ -f "$HOME/.local/share/fnm/fnm" ]]; then
-        rm -rf "$HOME/.local/share/fnm"
+        trash-put "$HOME/.local/share/fnm"
         print_success "fnm uninstalled successfully"
     else
         print_warning "fnm not found, skipping uninstallation"

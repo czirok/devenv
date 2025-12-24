@@ -2,7 +2,7 @@
 	'use strict';
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
@@ -96,7 +96,7 @@
 	}
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
@@ -230,7 +230,7 @@
 	}
 
 	/**
-	  * Blazor javascript library v1.0.0 (https://github.com/czirok/devenv/)
+	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
 	  * Copyright 2023-2025 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */

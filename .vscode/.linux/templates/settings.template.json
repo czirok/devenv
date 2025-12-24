@@ -1,5 +1,5 @@
 {
-	"window.zoomLevel": 0.3,
+	"window.zoomLevel": 0.5,
 
 	"workbench.tree.indent": 20,
 	"workbench.colorTheme": "Default Dark Modern",
@@ -10,9 +10,18 @@
 	"editor.fontFamily": "EDITOR_FONT",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 13,
-	"editor.fontWeight": "300",
+	"editor.fontWeight": "400",
 
 	"files.autoSave": "onFocusChange",
+
+	"vsicons.customIconFolderPath": ".vscode/.linux",
+	"vsicons.associations.folders": [
+		{
+			"icon": "gnome",
+			"extensions": ["GNOME", "gnome"],
+			"format": "svg"
+		}
+	],
 
 	"github.copilot.enable": {
 		"csharp": true,
@@ -21,7 +30,10 @@
 		"typescript": true,
 		"json": true,
 		"xml": true,
-		"yaml": true
+		"yaml": true,
+		"txt": true,
+		"scss": true,
+		"glsl": true
 	},
 
 	"explorer.fileNesting.enabled": true,
@@ -47,7 +59,9 @@
 		"razor",
 		"csharp",
 		"xml",
-		"svg"
+		"svg",
+		"txt",
+		"glsl"
 	],
 	"color-highlight.markerType": "background",
 	"color-highlight.matchRgbWithNoFunction": true,
@@ -64,7 +78,7 @@
 		// app
 		"**/bin": true,
 		"**/obj": true,
-		"**/*.csproj.user": true,
+		"**/*.csproj.user": false,
 		//  NodeJS
 		"**/node_modules/": true,
 		// publish
@@ -92,7 +106,7 @@
 		// app
 		"**/bin": true,
 		"**/obj": true,
-		"**/*.csproj.user": true,
+		"**/*.csproj.user": false,
 		//  NodeJS
 		"**/node_modules/": true
 	},
@@ -107,7 +121,7 @@
 		// app
 		"**/bin": true,
 		"**/obj": true,
-		"**/*.csproj.user": true,
+		"**/*.csproj.user": false,
 		//  NodeJS
 		"**/node_modules/": true,
 		// publish
@@ -149,7 +163,8 @@
 		"source.fixAll.stylelint": "always",
 		"source.fixAll.xml": "always",
 		"source.fixAll.yaml": "always",
-		"source.fixAll.json": "always"
+		"source.fixAll.json": "always",
+		"source.fixAll.glsl": "always"
 	},
 	// Silent the stylistic rules in you IDE, but still auto fix them
 	"eslint.rules.customizations": [],
@@ -165,10 +180,17 @@
 	"files.associations": {
 		"appsettings.json": "jsonc",
 		"appsettings.Development.json": "jsonc",
-		"*.csproj": "xml",
+		"*.slnx": "xml",
 		"*.props": "xml",
+		"*.targets": "xml",
+		"*.nuspec": "xml",
+		"*.pkgproj": "xml",
+		"*.csproj": "xml",
+		"*.csproj.user": "xml",
+		"*.pubxml": "xml",
 		"site.webmanifest": "jsonc",
-		"settings.template.json": "jsonc"
+		"*.template.json": "jsonc",
+		"*.comp.glsl": "glsl"
 	},
 	"css.validate": false,
 	"stylelint.validate": ["scss"],
@@ -180,10 +202,6 @@
 		"editor.formatOnSave": true,
 		"editor.formatOnPaste": true
 	},
-	"[xml]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnPaste": true
-	},
 	"[csharp]": {
 		"editor.defaultFormatter": "ms-dotnettools.csharp",
 		"editor.formatOnSave": true,
@@ -191,7 +209,6 @@
 			"source.fixAll.csharp": "always"
 		}
 	},
-	"dotnet.defaultSolution": "disable",
 	"dotnet.formatting.organizeImportsOnFormat": true,
 	"omnisharp.enableEditorConfigSupport": true,
 	// "emmet.includeLanguages": {
@@ -204,6 +221,14 @@
 		"editor.maxTokenizationLineLength": 500,
 		"editor.wordWrapColumn": 500,
 		"editor.wordWrap": "wordWrapColumn"
+	},
+	"shader-validator.glsl.enabled": true,
+	"shader-validator.glsl.targetClient": "OpenGL450",
+	"shader-validator.trace.server": "off",
+	"shader-validator.symbols": false,
+	"shader-validator.symbolDiagnostics": true,
+	"[glsl]": {
+		"editor.formatOnSave": true
 	},
 	"workbench.editor.wrapTabs": true,
 	"workbench.iconTheme": "vscode-icons",
@@ -243,4 +268,47 @@
 		"quickInputList.focusIconForeground": "COLOR_HIGHLIGHT",
 		"quickInputList.highlightForeground": "COLOR_HIGHLIGHTd0"
 	}
+	// ,
+	// "editor.semanticHighlighting.enabled": true,
+	// "editor.semanticTokenColorCustomizations": {
+	// 	"rules": {
+	// 		// "keyword": "#369CD6ff",
+	// 		"namespace": "#2a8876ff",
+	// 		"class": "#4ec9b0ff",
+	// 		"struct": "#4ec9b0ff",
+	// 		"interface": "#ba6eddff",
+	// 		"method": "#cbcb80ff",
+	// 		"property": "#7cb371ff",
+	// 		"delegate": "#dc6a6aff",
+	// 		"operator": "#f67645ff",
+	// 		"punctuation": "#COLOR_TEXT66",
+	// 		// "variable": "#ffd7d7",
+	// 		"string": "#f88070",
+	// 		"excludedCode": {
+	// 			"foreground": "#COLOR_TEXT66",
+	// 			"fontStyle": "italic"
+	// 		},
+	// 		"*.static": {
+	// 			"foreground": "#COLOR_TEXT"
+	// 		}
+	// 	}
+	// },
+	// "editor.tokenColorCustomizations": {
+	// 	"textMateRules": [
+	// 		{
+	// 			"name": "Outer Space /// Comments",
+	// 			"scope": [
+	// 				"comment"
+	// 			],
+	// 			"settings": { "foreground": "#COLOR_TEXT66", "fontStyle": "italic" }
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.name.variable.cs",
+	// 				"source.cs"
+	// 			],
+	// 			"settings": { "foreground": "#369CD6ff" }
+	// 		}
+	// 	]
+	// }
 }

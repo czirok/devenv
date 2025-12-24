@@ -21,7 +21,7 @@ uninstall_bashrc() {
     local bashrc_target="$SCRIPT_DIR/.bashrc"
 
     if [[ -f "$bashrc_target" ]]; then
-        rm "$bashrc_target"
+        trash-put "$bashrc_target"
         print_success "$bashrc_target uninstalled successfully"
     else
         print_warning ".bashrc file not found: $bashrc_target"

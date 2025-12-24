@@ -19,9 +19,27 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
 - `Ptyxis` terminal
 - `Oh My Posh` prompt
 - `Bash` configuration
-- Linter configuration for `Markdown`, `TypeScript`, and `SCSS` development
 - Unified color schemes for `VS Code`, `Ptyxis`, and `Oh My Posh`
 - `19` predefined dark themes: list, switch, and auto-update config when changing themes
+
+## Linter mania
+
+- `ESLint` + `@antfu/eslint-config`
+  - `xml`
+  - `json`
+  - `yaml`
+  - `typescript`
+  - Microsoft Build Platform (MSBuild) files
+    - `slnx`
+    - `props`
+    - `targets`
+    - `csproj`
+    - `csproj.user`
+    - `pubxml`
+    - `nuspec`
+    - `pkgproj`
+- `Stylelint` for SCSS with `stylelint-config-twbs-bootstrap`
+- `Markdownlint` for Markdown
 
 ## System Requirements
 
@@ -41,7 +59,7 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
 ```bash
 sudo pacman -Syu
 
-sudo pacman -S bash git bc curl ptyxis bzip2
+sudo pacman -S bash git bc curl ptyxis bzip2 trash-cli
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 
@@ -54,7 +72,7 @@ yay -S visual-studio-code-bin
 ```bash
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install bash git bc curl ptyxis bzip2
+sudo apt install bash git bc curl ptyxis bzip2 trash-cli
 
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-archive-keyring.gpg
 
@@ -68,7 +86,7 @@ sudo apt update && sudo apt install code
 ```bash
 sudo dnf update -y
 
-sudo dnf install bash git bc curl ptyxis bzip2
+sudo dnf install bash git bc curl ptyxis bzip2 trash-cli
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -87,7 +105,7 @@ sudo dnf install code
 ```bash
 sudo zypper update -y
 
-sudo zypper install bash git bc curl ptyxis bzip2
+sudo zypper install bash git bc curl ptyxis bzip2 trash-cli
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -107,7 +125,7 @@ mkdir ~/myawesomeproject
 
 cd ~/myawesomeproject
 
-wget https://github.com/czirok/devenv/releases/download/v2025.08.08/devenv.tar.bz2
+wget https://github.com/czirok/devenv/releases/download/v2025.12.24/devenv.tar.bz2
 
 # Safe extraction - won't overwrite existing files
 tar xjfv devenv.tar.bz2 --skip-old-files
@@ -225,7 +243,7 @@ After installing the terminal, log out and back in, then open a new Ptyxis "My A
 > First time you open the terminal, it will prompt you to install the required Node.js version if it's not already installed. Say `y` to install it:
 
 ```bash
-Can't find an installed Node version matching v24.3.0.
+Can't find an installed Node version matching v24.12.0.
 Do you want to install it? answer [y/N]: y
 ```
 
@@ -274,6 +292,35 @@ code
 > [!NOTE]
 > After installing the extensions, you can change the VS Code UI font settings. Read the [Fonted](https://github.com/blackmann/fonted) documentation for more information.
 
+### Fonted - Arch Linux
+
+#### `visual-studio-code-bin` package
+
+This steps need after fresh VS Code installation or upgrade.
+
+Before start VS Code, set write permissions for the workbench files:
+
+> [!NOTE]
+> Other distributions the workbench files may be in different locations.
+
+```bash
+sudo chmod 666 /opt/visual-studio-code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
+```
+
+Start the VS Code, press F1 and find the `Fonted` and enable it.
+
+![Fonted](/assets/fonted/enable.png)
+
+After enabled, don't click the restart, close it completely and restore the original permissions:
+
+```bash
+sudo chmod 644 /opt/visual-studio-code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
+```
+
+Start VS Code again, and disable the `Don't show again`.
+
+![Fonted](/assets/fonted/dont-show-again.png)
+
 ## Install Individual Components
 
 Node.js tools only:
@@ -282,16 +329,10 @@ Node.js tools only:
 .vscode/.linux/install.sh --fnm --pnpm
 ```
 
-.NET 9 SDK (includes Runtime and ASP.NET Core):
+.NET 8 Runtime and ASP.NET Core only (no SDK):
 
 ```bash
-.vscode/.linux/install.sh --net9sdk
-```
-
-.NET 9 Runtime and ASP.NET Core only (no SDK):
-
-```bash
-.vscode/.linux/install.sh --net9runtime --net9aspnet
+.vscode/.linux/install.sh --net8runtime --net8aspnet
 ```
 
 ## Uninstall
@@ -359,6 +400,10 @@ After making changes, apply and test them with one or more of the following comm
 
 The project includes a `packages/css` and a `packages/js` directory with sample setups for compiling SCSS and TypeScript.
 
+## Changelog
+
+See the [.github/releases](./.github/releases) folder for the changelog.
+
 ## License
 
-This project is licensed under the [MIT License](/LICENSE).
+[![MIT](/assets/shields.io/MIT.svg)](/LICENSE)

@@ -1,7 +1,7 @@
 {
 	"name": "@blazor/css",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Blazor extended stylesheet library",
 	"author": "Ferenc Czirok",
 	"license": "MIT",
@@ -12,11 +12,11 @@
 		"url": "git+https://github.com/czirok/devenv.git"
 	},
 	"engines": {
-		"node": ">=24.3.0"
+		"node": ">=24.12.0"
 	},
 	"scripts": {
 		"css": "pnpm css-compile && pnpm css-prefix && pnpm css-rtl && pnpm css-minify && pnpm copy",
-		"css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --silence-deprecation import,color-functions,global-builtin scss/bootstrap.scss 'dist/bootstrap.css'",
+		"css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --silence-deprecation import,if-function,color-functions,global-builtin scss/bootstrap.scss 'dist/bootstrap.css'",
 		"css-rtl": "cross-env NODE_ENV=RTL postcss --config postcss.config.mjs --dir 'dist' --ext '.rtl.css' 'dist/bootstrap.css' '!dist/bootstrap.min.css' '!dist/bootstrap.rtl.css'",
 		"css-lint": "pnpm css-lint-stylelint && pnpm css-lint-vars",
 		"css-lint-stylelint": "stylelint '**/*.scss' --cache --cache-location .cache/.stylelintcache",

@@ -11,6 +11,7 @@ $transition: all $transition-effect $transition-time !default;
 @import "close";
 @import "hamburger";
 @import "text-fade";
+@import "anim";
 
 .markdown {
   .definition {

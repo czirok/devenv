@@ -1,7 +1,7 @@
 {
 	"name": "@blazor/js",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Blazor javascript library",
 	"author": "Ferenc Czirok",
 	"license": "MIT",
@@ -24,7 +24,7 @@
 		"dist"
 	],
 	"engines": {
-		"node": ">=24.3.0"
+		"node": ">=24.12.0"
 	},
 	"scripts": {
 		"js": "rollup --config=rollup.dev.ts --configPlugin=rollup-plugin-esbuild && pnpm copy",
@@ -37,7 +37,7 @@
 	},
 	"devDependencies": {
 		"@blazor/js": "workspace:*",
-		"rollup": "^4.44.1",
+		"rollup": "^4.52.1",
 		"rollup-plugin-esbuild": "^6.2.1"
 	}
 }

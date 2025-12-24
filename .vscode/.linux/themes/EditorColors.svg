@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1900"
+   height="900"
+   version="1.1"
+   id="svg171"
+   sodipodi:docname="EditorColors.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs171" />
+  <sodipodi:namedview
+     id="namedview171"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.43263"
+     inkscape:cx="948.84"
+     inkscape:cy="450.73"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg171" />
+  <rect
+     width="100"
+     height="100"
+     y="100"
+     fill="#dc2323"
+     id="rect77"
+     x="0" />
+  <rect
+     width="100"
+     height="100"
+     x="1200"
+     y="100"
+     fill="#2323dc"
+     id="rect78" />
+  <rect
+     width="100"
+     height="100"
+     x="1100"
+     y="100"
+     fill="#235fdc"
+     id="rect79" />
+  <rect
+     width="100"
+     height="100"
+     x="1300"
+     y="100"
+     fill="#5f23dc"
+     id="rect80" />
+  <rect
+     width="100"
+     height="100"
+     x="1400"
+     y="100"
+     fill="#a023dc"
+     id="rect81" />
+  <rect
+     width="100"
+     height="100"
+     x="1500"
+     y="100"
+     fill="#dc23dc"
+     id="rect82" />
+  <rect
+     width="100"
+     height="100"
+     x="1600"
+     y="100"
+     fill="#dc23a0"
+     id="rect83" />
+  <rect
+     width="100"
+     height="100"
+     x="1700"
+     y="100"
+     fill="#dc235f"
+     id="rect84" />
+  <rect
+     width="100"
+     height="100"
+     x="1800"
+     y="100"
+     fill="#808080"
+     id="rect85" />
+  <rect
+     width="100"
+     height="100"
+     x="200"
+     y="100"
+     fill="#dca023"
+     id="rect86" />
+  <rect
+     width="100"
+     height="100"
+     x="100"
+     y="100"
+     fill="#dc5f23"
+     id="rect87" />
+  <rect
+     width="100"
+     height="100"
+     x="300"
+     y="100"
+     fill="#dcdc23"
+     id="rect88" />
+  <rect
+     width="100"
+     height="100"
+     x="400"
+     y="100"
+     fill="#a0dc23"
+     id="rect89"
+     style="fill:#4cdc23;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="500"
+     y="100"
+     fill="#5fdc23"
+     id="rect90" />
+  <rect
+     width="100"
+     height="100"
+     x="600"
+     y="100"
+     fill="#23dc23"
+     id="rect91" />
+  <rect
+     width="100"
+     height="100"
+     x="700"
+     y="100"
+     fill="#23dc5f"
+     id="rect92" />
+  <rect
+     width="100"
+     height="100"
+     x="800"
+     y="100"
+     fill="#23dca0"
+     id="rect93" />
+  <rect
+     width="100"
+     height="100"
+     x="900"
+     y="100"
+     fill="#23dcdc"
+     id="rect94" />
+  <rect
+     width="100"
+     height="100"
+     x="1000"
+     y="100"
+     fill="#23a0dc"
+     id="rect95" />
+  <rect
+     width="100"
+     height="100"
+     fill="#f8d3d3"
+     id="rect153"
+     style="fill:#dc6a6a;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="1200"
+     fill="#d3d3f8"
+     id="rect154" />
+  <rect
+     width="100"
+     height="100"
+     x="1100"
+     fill="#d3dff8"
+     id="rect155" />
+  <rect
+     width="100"
+     height="100"
+     x="1300"
+     fill="#dfd3f8"
+     id="rect156" />
+  <rect
+     width="100"
+     height="100"
+     x="1400"
+     fill="#ecd3f8"
+     id="rect157"
+     style="fill:#ba6edd;fill-opacity:1"
+     y="2" />
+  <rect
+     width="100"
+     height="100"
+     x="1500"
+     fill="#f8d3f8"
+     id="rect158" />
+  <rect
+     width="100"
+     height="100"
+     x="1600"
+     fill="#f8d3ec"
+     id="rect159" />
+  <rect
+     width="100"
+     height="100"
+     x="1700"
+     fill="#f8d3df"
+     id="rect160" />
+  <rect
+     width="100"
+     height="100"
+     x="1800"
+     fill="#e5e5e5"
+     id="rect161" />
+  <rect
+     width="100"
+     height="100"
+     x="200"
+     fill="#f8ecd3"
+     id="rect162" />
+  <rect
+     width="100"
+     height="100"
+     x="100"
+     fill="#f8dfd3"
+     id="rect163"
+     style="fill:#f67645;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="300"
+     fill="#f8f8d3"
+     id="rect164"
+     style="fill:#cbcb80;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="400"
+     fill="#ecf8d3"
+     id="rect165" />
+  <rect
+     width="100"
+     height="100"
+     x="500"
+     fill="#dff8d3"
+     id="rect166" />
+  <rect
+     width="100"
+     height="100"
+     x="600"
+     fill="#d3f8d3"
+     id="rect167" />
+  <rect
+     width="100"
+     height="100"
+     x="700"
+     fill="#d3f8df"
+     id="rect168" />
+  <rect
+     width="100"
+     height="100"
+     x="700"
+     fill="#d3f8ec"
+     id="rect169-6"
+     style="fill:#2a8876;fill-opacity:1"
+     y="0" />
+  <rect
+     width="100"
+     height="100"
+     x="800"
+     fill="#d3f8ec"
+     id="rect169"
+     style="fill:#4ec9b0;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="900"
+     fill="#d3f8f8"
+     id="rect170" />
+  <rect
+     width="100"
+     height="100"
+     x="1000"
+     fill="#d3ecf8"
+     id="rect171"
+     style="fill:#569cd6;fill-opacity:1" />
+  <rect
+     width="100"
+     height="100"
+     x="600"
+     fill="#d3f8ec"
+     id="rect172"
+     style="fill:#7cb371;fill-opacity:1"
+     y="0" />
+</svg>

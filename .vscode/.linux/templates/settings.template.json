@@ -33,7 +33,8 @@
 		"yaml": true,
 		"txt": true,
 		"scss": true,
-		"glsl": true
+		"glsl": true,
+		"xaml": true
 	},
 
 	"explorer.fileNesting.enabled": true,
@@ -61,7 +62,8 @@
 		"xml",
 		"svg",
 		"txt",
-		"glsl"
+		"glsl",
+		"xaml"
 	],
 	"color-highlight.markerType": "background",
 	"color-highlight.matchRgbWithNoFunction": true,
@@ -164,7 +166,8 @@
 		"source.fixAll.xml": "always",
 		"source.fixAll.yaml": "always",
 		"source.fixAll.json": "always",
-		"source.fixAll.glsl": "always"
+		"source.fixAll.glsl": "always",
+		"source.fixAll.xaml": "always"
 	},
 	// Silent the stylistic rules in you IDE, but still auto fix them
 	"eslint.rules.customizations": [],
@@ -190,10 +193,14 @@
 		"*.pubxml": "xml",
 		"site.webmanifest": "jsonc",
 		"*.template.json": "jsonc",
-		"*.comp.glsl": "glsl"
+		"*.comp.glsl": "glsl",
+		"*.xaml": "xaml"
 	},
 	"css.validate": false,
 	"stylelint.validate": ["scss"],
+	"markdownlint.config": {
+		"MD034": false
+	},
 	"[markdown]": {
 		"editor.formatOnSave": true,
 		"editor.formatOnPaste": true

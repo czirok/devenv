@@ -75,6 +75,38 @@ if (antfuFormatterXml) {
 	} as Linter.Config
 	// Add MSBuild config
 	linters.append(msbuildConfig)
+
+	// New XAML config creation based on the XML config
+	const xamlConfig = {
+		...antfuFormatterXml,
+		name: 'antfu/formatter/xaml',
+		// Only apply to XAML-related files.
+		files: [
+			'**/*.xaml',
+		],
+		rules: {
+			...antfuFormatterXml.rules,
+			'format/prettier': [
+				'error',
+				{
+					...(
+						Array.isArray(antfuFormatterXml.rules?.['format/prettier'])
+						&& antfuFormatterXml.rules?.['format/prettier'].length > 1
+							? antfuFormatterXml.rules?.['format/prettier'][1]
+							: {}
+					),
+					// Extended Prettier config for XAML files
+					printWidth: 120,
+					tabWidth: 4,
+					useTabs: true,
+					xmlWhitespaceSensitivity: 'ignore',
+					endOfLine: 'crlf',
+				},
+			],
+		},
+	} as Linter.Config
+	// Add XAML config
+	linters.append(xamlConfig)
 }
 
 export default linters

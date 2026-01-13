@@ -67,7 +67,7 @@ yay -S visual-studio-code-bin
 
 ```
 
-#### Ubuntu Plucky Puffin (25.04) and Debian Trixie (13)
+#### Ubuntu Plucky Puffin (25.10) and Debian Trixie (13)
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -402,7 +402,7 @@ The project includes a `packages/css` and a `packages/js` directory with sample 
 
 ## Changelog
 
-See the [.github/releases](./.github/releases) folder for the changelog.
+See the [.github/releases](.github/releases) folder for the changelog.
 
 ## License
 

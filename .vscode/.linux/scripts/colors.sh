@@ -125,7 +125,6 @@ list_themes() {
     } < "$colors_file"
 }
 
-
 change_theme() {
     local theme_name="$1"
     
@@ -140,11 +139,21 @@ change_theme() {
     load_theme_colors "$theme_name" || return 1
     
     # Update configurations
-    change_ptyxis_palette
+    if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+        change_ptyxis_palette
+    elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+        change_gnome_terminal_palette
+    fi
     install_oh_my_posh
     install_vscode
+    install_gnome_desktop_file
     install_gnome_icon
-    update_gnome_icon_cache    
+    update_gnome_cache
     
     print_success "Theme changed to: $theme_name"
+
+    print_warning "Exetute the following command to apply the new oh-my-posh theme in the current terminal session:"
+    echo
+    echo "eval \"\$(oh-my-posh init bash --config $SCRIPT_DIR/oh-my-posh.json)\""
+    echo
 }

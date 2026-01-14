@@ -48,13 +48,24 @@ check_dependencies() {
         all_ok=false
     fi
 
-    # Check Ptyxis
-    if command -v ptyxis >/dev/null 2>&1; then
-        local ptyxis_version=$(ptyxis --version | head -n1 2>/dev/null || echo "unknown")
-        print_success "Ptyxis found (version: $ptyxis_version)"
-    else
-        print_error "Ptyxis not found - install Ptyxis terminal"
-        all_ok=false
+    if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+        # Check Ptyxis
+        if command -v ptyxis >/dev/null 2>&1; then
+            local ptyxis_version=$(ptyxis --version | head -n1 2>/dev/null || echo "unknown")
+            print_success "Ptyxis found (version: $ptyxis_version)"
+        else
+            print_error "Ptyxis not found - install Ptyxis terminal"
+            all_ok=false
+        fi
+    elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+        # Check GNOME Terminal
+        if command -v gnome-terminal >/dev/null 2>&1; then
+            local gnome_terminal_version=$(gnome-terminal --version | head -n1)
+            print_success "GNOME Terminal found (version: $gnome_terminal_version)"
+        else
+            print_error "GNOME Terminal not found - install GNOME Terminal"
+            all_ok=false
+        fi
     fi
 
     if [[ "$all_ok" == "true" ]]; then

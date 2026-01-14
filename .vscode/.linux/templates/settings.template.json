@@ -194,7 +194,7 @@
 		"site.webmanifest": "jsonc",
 		"*.template.json": "jsonc",
 		"*.comp.glsl": "glsl",
-		"*.xaml": "xaml"
+		"*.xaml": "xml"
 	},
 	"css.validate": false,
 	"stylelint.validate": ["scss"],

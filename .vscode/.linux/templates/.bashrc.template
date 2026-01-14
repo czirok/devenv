@@ -11,7 +11,7 @@ esac
 export PROJECT_ENVLINUX=$PROJECT_ENV/.vscode/.linux
 export PATH=$PATH:$PROJECT_ENVLINUX
 export DOTNET_ROOT=$PROJECT_ENVLINUX/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

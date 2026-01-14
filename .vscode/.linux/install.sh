@@ -23,6 +23,7 @@ source "$SCRIPT_DIR/scripts/gnome_cache.sh"
 source "$SCRIPT_DIR/scripts/oh_my_posh.sh"
 source "$SCRIPT_DIR/scripts/pnpm.sh"
 source "$SCRIPT_DIR/scripts/ptyxis.sh"
+source "$SCRIPT_DIR/scripts/gnome-terminal.sh"
 source "$SCRIPT_DIR/scripts/vscode.sh"
 source "$SCRIPT_DIR/scripts/check_dependencies.sh"
 source "$SCRIPT_DIR/scripts/uninstall_node_modules.sh"
@@ -43,10 +44,9 @@ show_usage() {
     echo "  --font                  Install application font"
     echo "  --list-fonts            List all installed fonts"
     echo "  --oh-my-posh            Install Oh My Posh with configuration"
-    echo "  -t, --terminal          Install everything needed for Ptyxis terminal usage"
     echo "  --bashrc                Install .bashrc configuration"
     echo "  --environment           Install environment variables"
-    echo "  --ptyxis                Install Ptyxis terminal"
+    echo "  --terminal              Install terminal"
     echo "  --vscode                Install VSCode settings with new colors"
     echo ""
     echo ".NET components:"
@@ -71,7 +71,7 @@ show_usage() {
     echo "  --uninstall-oh-my-posh       Uninstall Oh My Posh"
     echo "  --uninstall-bashrc           Uninstall .bashrc configuration"
     echo "  --uninstall-environment      Uninstall environment variables"
-    echo "  --uninstall-ptyxis           Uninstall Ptyxis terminal"
+    echo "  --uninstall-terminal         Uninstall terminal"
     echo "  --uninstall-vscode           Uninstall VS Code"
     echo "  --uninstall-node-modules     Uninstall all node_modules directories"
     echo "  --uninstall-dotnet           Uninstall .NET"
@@ -155,8 +155,8 @@ parse_arguments() {
                 INSTALL_OH_MY_POSH=true
                 shift
                 ;;
-            --ptyxis)
-                INSTALL_PTYXIS=true
+            --terminal)
+                INSTALL_TERMINAL=true
                 shift
                 ;;
             --vscode)
@@ -228,10 +228,6 @@ parse_arguments() {
                     exit 1
                 fi
                 ;;
-            -t|--terminal)
-                INSTALL_TERMINAL=true
-                shift
-                ;;
             --uninstall-all)
                 UNINSTALL_FNM=true
                 UNINSTALL_PNPM=true
@@ -241,7 +237,8 @@ parse_arguments() {
                 UNINSTALL_OH_MY_POSH=true
                 UNINSTALL_BASHRC=true
                 UNINSTALL_ENVIRONMENT=true
-                UNINSTALL_PTYXIS=true
+                UNINSTALL_TERMINAL=true
+                UNINSTALL_GNOME_TERMINAL=true
                 UNINSTALL_VSCODE=true
                 UNINSTALL_NODE_MODULES=true
                 UNINSTALL_DOTNET=true
@@ -279,8 +276,12 @@ parse_arguments() {
                 UNINSTALL_ENVIRONMENT=true
                 shift
                 ;;
-            --uninstall-ptyxis)
-                UNINSTALL_PTYXIS=true
+            --uninstall-terminal)
+                UNINSTALL_TERMINAL=true
+                shift
+                ;;
+            --uninstall-gnome-terminal)
+                UNINSTALL_GNOME_TERMINAL=true
                 shift
                 ;;
             --uninstall-vscode)
@@ -330,6 +331,15 @@ replace_project_vars() {
         "$file"
 }
 
+replace_hex_to_rgb() {
+    local file="$1"
+    
+    sed -i \
+        -e "s/COLOR_ACCENT/$(hex_to_rgb ${COLOR_ACCENT})/g" \
+        -e "s/COLOR_TEXT/$(hex_to_rgb ${COLOR_TEXT})/g" \
+        "$file"
+}
+
 main() {
     # Default behavior: check dependencies and show help
     if [[ $# -eq 0 ]] || [[ "$1" == "-d" ]] || [[ "$1" == "--dependency" ]]; then
@@ -348,12 +358,13 @@ main() {
 
     if [[ "$VERBOSE" == "true" ]]; then
         print_success "Configuration:"
-        echo -e "  PROJECT_TITLE: ${YELLOW}$PROJECT_TITLE${NC}"
-        echo -e "  PROJECT_ID:    ${YELLOW}$PROJECT_ID${NC}"
-        echo -e "  PROJECT_ROOT:  ${YELLOW}$PROJECT_ROOT${NC}"
-        echo -e "  PROJECT_ENV:   ${YELLOW}$PROJECT_ENV${NC}"
-        echo -e "  SCRIPT_DIR:    ${YELLOW}$SCRIPT_DIR${NC}"
-        echo -e "  VERBOSE:       ${YELLOW}enabled${NC}"
+        echo -e "  PROJECT_TITLE:    ${YELLOW}$PROJECT_TITLE${NC}"
+        echo -e "  PROJECT_ID:       ${YELLOW}$PROJECT_ID${NC}"
+        echo -e "  PROJECT_ROOT:     ${YELLOW}$PROJECT_ROOT${NC}"
+        echo -e "  PROJECT_ENV:      ${YELLOW}$PROJECT_ENV${NC}"
+        echo -e "  SCRIPT_DIR:       ${YELLOW}$SCRIPT_DIR${NC}"
+        echo -e "  PROJECT_TERMINAL: ${YELLOW}$PROJECT_TERMINAL${NC}"
+        echo -e "  VERBOSE:          ${YELLOW}enabled${NC}"
     fi
 
     # Validate configuration
@@ -375,7 +386,9 @@ main() {
 
     # Handle --install-themes
     if [[ "$INSTALL_THEMES" == "true" ]]; then
-        install_ptyxis_themes
+        if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+            install_ptyxis_themes
+        fi
         exit 0
     fi
 
@@ -386,23 +399,12 @@ main() {
     fi
 
     if [[ "$INSTALL_TERMINAL" == "true" ]]; then
-        install_bashrc
-
-        install_ptyxis_themes
-        install_ptyxis
-
-        install_gnome_icon
-        install_gnome_desktop_file
-        install_gnome_font
-
-        update_gnome_cache
-
-        install_oh_my_posh            
-    fi
-
-    if [[ "$INSTALL_PTYXIS" == "true" ]]; then
-        install_ptyxis_themes
-        install_ptyxis
+        if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+            install_ptyxis_themes
+            install_ptyxis
+        elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+            install_gnome_terminal
+        fi
     fi
 
     if [[ "$INSTALL_VSCODE" == "true" ]]; then
@@ -413,8 +415,12 @@ main() {
 
         install_bashrc
 
-        install_ptyxis_themes
-        install_ptyxis
+        if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+            install_ptyxis_themes
+            install_ptyxis
+        elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+            install_gnome_terminal
+        fi
 
         install_gnome_icon
         install_gnome_desktop_file
@@ -565,8 +571,12 @@ main() {
         uninstall_environment_variable
     fi
 
-    if [[ "$UNINSTALL_PTYXIS" == "true" ]]; then
-        uninstall_ptyxis
+    if [[ "$UNINSTALL_TERMINAL" == "true" ]]; then
+        if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+            uninstall_ptyxis
+        elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+            uninstall_gnome_terminal
+        fi
     fi
 
     if [[ "$UNINSTALL_VSCODE" == "true" ]]; then
@@ -593,13 +603,17 @@ main() {
         uninstall_oh_my_posh
         uninstall_bashrc
         uninstall_environment_variable
-        uninstall_ptyxis
+        if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+            uninstall_ptyxis
+        elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+            uninstall_gnome_terminal
+        fi
         uninstall_vscode
         uninstall_node_modules
         uninstall_dotnet
     fi
 
-    print_success "Installation completed successfully!"
+    print_success "Setup completed successfully!"
     if 
         [[ "$INSTALL_GNOME_DESKTOP" == "true" ]] ||
         [[ "$INSTALL_ALL" == "true" ]]; then
@@ -609,9 +623,8 @@ main() {
     if 
         [[ "$INSTALL_ENVIRONMENT" == "true" ]] || 
         [[ "$INSTALL_ALL" == "true" ]] || 
-        [[ "$INSTALL_TERMINAL" == "true" ]] || 
         [[ "$INSTALL_VSCODE" == "true" ]] || 
-        [[ "$INSTALL_PTYXIS" == "true" ]]; then
+        [[ "$INSTALL_TERMINAL" == "true" ]]; then
         print_warning "You may need to log out and back in for the ${PROJECT_ENV} environment variable to take effect, if you changed the git root directory."
     fi
 }

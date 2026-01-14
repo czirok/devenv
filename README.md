@@ -38,6 +38,8 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
     - `pubxml`
     - `nuspec`
     - `pkgproj`
+  - XAML files
+    - `xaml`
 - `Stylelint` for SCSS with `stylelint-config-twbs-bootstrap`
 - `Markdownlint` for Markdown
 
@@ -50,7 +52,7 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
 ## Installation
 
 > [!NOTE]
-> GNOME 48 or later is required
+> GNOME 46 or later is required
 
 ### Dependencies
 
@@ -59,7 +61,10 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
 ```bash
 sudo pacman -Syu
 
-sudo pacman -S bash git bc curl ptyxis bzip2 trash-cli
+# Ptyxis
+sudo pacman -S bash git bc curl bzip2 trash-cli ptyxis
+# GNOME Terminal
+sudo pacman -S bash git bc curl bzip2 trash-cli gnome-terminal
 
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 
@@ -67,12 +72,15 @@ yay -S visual-studio-code-bin
 
 ```
 
-#### Ubuntu Plucky Puffin (25.10) and Debian Trixie (13)
+#### Ubuntu Noble (24.04) Ubuntu Plucky Puffin (25.10) and Debian Trixie (13)
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install bash git bc curl ptyxis bzip2 trash-cli
+# Ptyxis
+sudo apt install bash git bc curl bzip2 trash-cli ptyxis
+# GNOME Terminal
+sudo apt install bash git bc curl bzip2 trash-cli gnome-terminal
 
 curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-archive-keyring.gpg
 
@@ -86,7 +94,10 @@ sudo apt update && sudo apt install code
 ```bash
 sudo dnf update -y
 
-sudo dnf install bash git bc curl ptyxis bzip2 trash-cli
+# Ptyxis
+sudo dnf install bash git bc curl bzip2 trash-cli ptyxis
+# GNOME Terminal
+sudo dnf install bash git bc curl bzip2 trash-cli gnome-terminal
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -105,7 +116,10 @@ sudo dnf install code
 ```bash
 sudo zypper update -y
 
-sudo zypper install bash git bc curl ptyxis bzip2 trash-cli
+# Ptyxis
+sudo zypper install bash git bc curl bzip2 trash-cli ptyxis
+# GNOME Terminal
+sudo zypper install bash git bc curl bzip2 trash-cli gnome-terminal
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
@@ -125,7 +139,7 @@ mkdir ~/myawesomeproject
 
 cd ~/myawesomeproject
 
-wget https://github.com/czirok/devenv/releases/download/v2025.12.24/devenv.tar.bz2
+wget https://github.com/czirok/devenv/releases/download/v2026.01.15/devenv.tar.bz2
 
 # Safe extraction - won't overwrite existing files
 tar xjfv devenv.tar.bz2 --skip-old-files
@@ -162,6 +176,8 @@ PROJECT_ENV="DEVENV"                   <- "MYPROJECTENV"
 THEME="Steel Blue"                     <- "Storm Cloud"
 EDITOR_FONT="FiraCode Nerd Font Mono"  <- "My editor font"
 FONTED_FONT="Adwaita Sans"             <- "My UI font"
+PROJECT_TERMINAL="gnome-terminal"      <- "ptyxis" or "gnome-terminal"
+GNOME_TERMINAL_ID="105c376f-f0e3-43d4-a021-b19e9d94b1d4"
 ```
 
 #### Configuration Explanation
@@ -172,6 +188,17 @@ FONTED_FONT="Adwaita Sans"             <- "My UI font"
 - `THEME`: Developer environment color scheme. E.g.: `"Storm Cloud"`
 - `EDITOR_FONT`: Font used in the editor. E.g.: `"FiraCode Nerd Font Mono"`
 - `FONTED_FONT`: Font used in the UI. E.g.: `"Adwaita Sans"`
+- `PROJECT_TERMINAL`: Terminal emulator used for the project. E.g.: `"ptyxis"` or `"gnome-terminal"`.
+
+If you choose `gnome-terminal`, set the `GNOME_TERMINAL_ID` variable as well. **Every project must have a unique GUID!**
+
+- `GNOME_TERMINAL_ID`: Unique identifier for the GNOME terminal profile. E.g.: `"977d30fd-43fd-4f0a-a80e-be80e64f4f7d"`.
+
+GUIDs find in the [install.env](.vscode/.linux/install.env) file or generate a new one with:
+
+```bash
+uuidgen
+```
 
 ### Fonts
 
@@ -226,13 +253,13 @@ After editing, you can replace specific colors in `install.svg` with environment
 - `COLOR_HIGHLIGHT`
 - `COLOR_TEXT`
 
-## Ptyxis Terminal Setup
+## Terminal Setup
 
 ```bash
 .vscode/.linux/install.sh --terminal
 ```
 
-![ptyxis](/assets/ptyxis.png)
+![Terminal](/assets/ptyxis.png)
 
 > [!CAUTION]
 > You need to log out and back in for the environment variables to take effect!
@@ -242,7 +269,7 @@ After installing the terminal, log out and back in, then open a new Ptyxis "My A
 > [!IMPORTANT]
 > First time you open the terminal, it will prompt you to install the required Node.js version if it's not already installed. Say `y` to install it:
 
-```bash
+```text
 Can't find an installed Node version matching v24.12.0.
 Do you want to install it? answer [y/N]: y
 ```
@@ -304,7 +331,11 @@ Before start VS Code, set write permissions for the workbench files:
 > Other distributions the workbench files may be in different locations.
 
 ```bash
+# Arch Linux
 sudo chmod 666 /opt/visual-studio-code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
+
+# Ubuntu
+sudo chmod 666 /usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
 ```
 
 Start the VS Code, press F1 and find the `Fonted` and enable it.
@@ -314,10 +345,14 @@ Start the VS Code, press F1 and find the `Fonted` and enable it.
 After enabled, don't click the restart, close it completely and restore the original permissions:
 
 ```bash
+# Arch Linux
 sudo chmod 644 /opt/visual-studio-code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
+
+# Ubuntu
+sudo chmod 644 /usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.*
 ```
 
-Start VS Code again, and disable the `Don't show again`.
+Start VS Code again, `code`+`enter` and disable the `Don't show again`.
 
 ![Fonted](/assets/fonted/dont-show-again.png)
 
@@ -352,7 +387,7 @@ Node.js tools only:
 .vscode/.linux/install.sh --uninstall-oh-my-posh       # Uninstall Oh My Posh
 .vscode/.linux/install.sh --uninstall-bashrc           # Uninstall .bashrc configuration
 .vscode/.linux/install.sh --uninstall-environment      # Uninstall environment variables
-.vscode/.linux/install.sh --uninstall-ptyxis           # Uninstall Ptyxis terminal
+.vscode/.linux/install.sh --uninstall-terminal         # Uninstall terminal
 .vscode/.linux/install.sh --uninstall-vscode           # Uninstall VS Code
 .vscode/.linux/install.sh --uninstall-node-modules     # Uninstall all node_modules directories
 .vscode/.linux/install.sh --uninstall-dotnet           # Uninstall .NET
@@ -383,6 +418,8 @@ Variable names from `.vscode/.linux/install.env`:
 - `THEME`
 - `EDITOR_FONT`
 - `FONTED_FONT`
+- `PROJECT_TERMINAL`
+- `GNOME_TERMINAL_ID`
 
 After making changes, apply and test them with one or more of the following commands:
 
@@ -392,7 +429,6 @@ After making changes, apply and test them with one or more of the following comm
 .vscode/.linux/install.sh --oh-my-posh
 .vscode/.linux/install.sh --terminal
 .vscode/.linux/install.sh --bashrc
-.vscode/.linux/install.sh --ptyxis
 .vscode/.linux/install.sh --vscode
 ```
 

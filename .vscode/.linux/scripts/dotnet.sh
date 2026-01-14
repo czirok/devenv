@@ -107,7 +107,7 @@ install_net10aspnet() {
 
 install_maui() {
     print_step "Setting up .NET MAUI workload..."
-    dotnet workload install maui-android wasm-tools
+    dotnet workload install maui-android wasm-tools --temp-dir ~/.cache
     print_success ".NET MAUI workload set up"
 }
 

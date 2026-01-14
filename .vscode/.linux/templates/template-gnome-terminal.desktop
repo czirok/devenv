@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=PROJECT_TITLE
+Exec=gnome-terminal --window --profile='PROJECT_TITLE'
+Icon=PROJECT_ID
+Terminal=false
+Categories=Utility;TerminalEmulator;

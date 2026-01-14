@@ -1,7 +1,11 @@
 install_gnome_desktop_file() {
     print_step "Installing desktop application..."
 
-    local desktop_source="$SCRIPT_DIR/templates/template.desktop"
+    if [[ "$PROJECT_TERMINAL" == "ptyxis" ]]; then
+        local desktop_source="$SCRIPT_DIR/templates/template-ptyxis.desktop"
+    elif [[ "$PROJECT_TERMINAL" == "gnome-terminal" ]]; then
+        local desktop_source="$SCRIPT_DIR/templates/template-gnome-terminal.desktop"
+    fi
     local desktop_target="$HOME/.local/share/applications/${PROJECT_ID}.desktop"
     
     # Create directory if it doesn't exist

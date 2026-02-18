@@ -1,5 +1,7 @@
 # C#/TypeScript/SCSS Development Environment
 
+![Logo](/assets/devenv.svg)
+
 ## Overview
 
 An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) with VS Code integration. Each project gets its own isolated shell, consistent color theme, terminal profile, icon, and fonts.
@@ -40,6 +42,10 @@ An opinionated dev environment for C#, TypeScript, and SCSS on Linux (GNOME) wit
     - `pkgproj`
   - XAML files
     - `xaml`
+  - Apple plist files
+    - `plist`
+  - SVG files
+    - `svg`
 - `Stylelint` for SCSS with `stylelint-config-twbs-bootstrap`
 - `Markdownlint` for Markdown
 
@@ -69,7 +75,6 @@ sudo pacman -S bash git bc curl bzip2 trash-cli gnome-terminal
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 
 yay -S visual-studio-code-bin
-
 ```
 
 #### Ubuntu Noble (24.04) Ubuntu Plucky Puffin (25.10) and Debian Trixie (13)
@@ -139,7 +144,7 @@ mkdir ~/myawesomeproject
 
 cd ~/myawesomeproject
 
-wget https://github.com/czirok/devenv/releases/download/v2026.01.15/devenv.tar.bz2
+wget https://github.com/czirok/devenv/releases/download/v2026.02.18/devenv.tar.bz2
 
 # Safe extraction - won't overwrite existing files
 tar xjfv devenv.tar.bz2 --skip-old-files
@@ -148,7 +153,7 @@ tar xjfv devenv.tar.bz2 --skip-old-files
 ### Show help
 
 > [!IMPORTANT]
-> The install script `.vscode/.linux/install.sh` must be run from the root of the git repository or project root. This ensures correct environment variables and paths are set.  
+> The install script `.vscode/.linux/install.sh` must be run from the root of the git repository or project root. This ensures correct environment variables and paths are set.
 > The environment is self-managing: running any command will regenerate related files from templates, overwriting manual changes.
 
 ```bash
@@ -270,7 +275,7 @@ After installing the terminal, log out and back in, then open a new Ptyxis or GN
 > First time you open the terminal, it will prompt you to install the required Node.js version if it's not already installed. Say `y` to install it:
 
 ```text
-Can't find an installed Node version matching v24.12.0.
+Can't find an installed Node version matching v24.13.1.
 Do you want to install it? answer [y/N]: y
 ```
 
@@ -399,7 +404,7 @@ Node.js tools only:
 
 ## Customization
 
-> [!CAUTION]  
+> [!CAUTION]
 > The environment is self-managing. Running any command will regenerate the related files from templates, overwriting manual changes.
 
 To customize, edit the templates located in `.vscode/.linux/templates` and the `.vscode/.linux/.themes/Colors.txt` file.

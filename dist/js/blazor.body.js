@@ -3,7 +3,7 @@
 
 	/**
 	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
-	  * Copyright 2023-2025 Ferenc Czirok
+	  * Copyright 2023-2026 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
 	var __defProp$3 = Object.defineProperty;
@@ -198,7 +198,7 @@
 
 	/**
 	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
-	  * Copyright 2023-2025 Ferenc Czirok
+	  * Copyright 2023-2026 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
 	var __defProp$2 = Object.defineProperty;
@@ -229,7 +229,7 @@
 
 	/**
 	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
-	  * Copyright 2023-2025 Ferenc Czirok
+	  * Copyright 2023-2026 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
 	var __defProp$1 = Object.defineProperty;
@@ -269,7 +269,7 @@
 
 	/**
 	  * Blazor javascript library v1.0.1 (https://github.com/czirok/devenv/)
-	  * Copyright 2023-2025 Ferenc Czirok
+	  * Copyright 2023-2026 Ferenc Czirok
 	  * Licensed under MIT (https://github.com/czirok/devenv/blob/main/LICENSE)
 	  */
 	var __defProp = Object.defineProperty;

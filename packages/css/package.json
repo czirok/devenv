@@ -12,7 +12,7 @@
 		"url": "git+https://github.com/czirok/devenv.git"
 	},
 	"engines": {
-		"node": ">=24.12.0"
+		"node": ">=24.13.1"
 	},
 	"scripts": {
 		"css": "pnpm css-compile && pnpm css-prefix && pnpm css-rtl && pnpm css-minify && pnpm copy",

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="5800" height="2700" viewBox="0 0 5800 2700" version="1.1" id="svg5" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<title id="title1">Bootstrap Colors</title>
+	<rect style="fill:#0000ff" id="rect77725" width="300" height="300" x="0" y="1020" />
+	<rect style="fill:#4b0082" id="rect77727" width="300" height="300" x="500" y="1020" />
+	<rect style="fill:#800080" id="rect77729" width="300" height="300" x="1000" y="1020" />
+	<rect style="fill:#ff1493" id="rect77731" width="300" height="300" x="1500" y="1020" />
+	<rect style="fill:#ff0000" id="rect77733" width="300" height="300" x="2000" y="1020" />
+	<rect style="fill:#ffa600" id="rect77735" width="300" height="300" x="2480" y="1020" />
+	<rect style="fill:#008000" id="rect77737" width="300" height="300" x="3480" y="1020" />
+	<rect style="fill:#008080" id="rect77739" width="300" height="300" x="3980" y="1020" />
+	<rect style="fill:#00ffff" id="rect77741" width="300" height="300" x="4480" y="1020" />
+	<rect style="fill:#808080" id="rect77747" width="300" height="300" x="4980" y="1020" />
+	<rect style="fill:#2261dd" id="rect155840" width="300" height="300" x="0" y="1500" />
+	<rect style="fill:#dd2280" id="rect155846" width="300" height="300" x="1500" y="1500" />
+	<rect style="fill:#dc2323" id="rect155848" width="300" height="300" x="2000" y="1500" />
+	<rect style="fill:#dd8022" id="rect155850" width="300" height="300" x="2480" y="1500" />
+	<rect style="fill:#158415" id="rect155852" width="300" height="300" x="3480" y="1500" />
+	<rect style="fill:#23dc9e" id="rect155854" width="300" height="300" x="3980" y="1500" />
+	<rect style="fill:#22dddd" id="rect155856" width="300" height="300" x="4480" y="1500" />
+	<rect style="fill:#6e737c" id="rect155862" width="300" height="300" x="4980" y="1500" />
+	<rect style="fill:#ffff00" id="rect156010" width="300" height="300" x="2980" y="1020" />
+	<rect style="fill:#ffd500" id="rect156014" width="300" height="300" x="2980" y="1500" />
+	<path style="fill:#c9f8f8" d="m 4626.2,1800 76.9,133.3 -76.9,133 -76.9,-133 z" id="path164855" />
+	<path style="fill:#0c4b4b" d="m 4626.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path164857" />
+	<path style="fill:#22dddd" d="m 4703.1,1933.3 h 153.9 l -77,133 h -153.8 z" id="path164859" />
+	<path style="fill:#f8c9c9" d="m 2146.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path164879" />
+	<path style="fill:#4b0c0c" d="m 2146.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path164881" />
+	<path style="fill:#dc2323" d="m 2223.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path164883" />
+	<path style="fill:#f8dec9" d="m 2626.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path164887" />
+	<path style="fill:#4b2c0c" d="m 2626.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path164889" />
+	<path style="fill:#dd8022" d="m 2703.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path164891" />
+	<path style="fill:#c9d9f8" d="m 146.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path164861" />
+	<path style="fill:#0a1d43" d="m 146.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path164863" />
+	<path style="fill:#2261dd" d="m 223.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path164865" />
+	<path style="fill:#fff5c2" d="m 3126.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path166520" />
+	<path style="fill:#574900" d="m 3126.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path166522" />
+	<path style="fill:#ffd500" d="m 3203.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path166524" />
+	<rect style="fill:#8022dd" id="rect168321" width="300" height="300" x="1000" y="1500" />
+	<path style="fill:#e0c9f8" d="m 1146.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path168323" />
+	<path style="fill:#2c0c4b" d="m 1146.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path168325" />
+	<path style="fill:#8022dd" d="m 1223.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path168327" />
+	<path style="fill:#f8c8e0" d="m 1646.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path168343" />
+	<path style="fill:#4b0c2c" d="m 1646.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path168345" />
+	<path style="fill:#dd2280" d="m 1723.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path168347" />
+	<path style="fill:#0c4b0c" d="m 3626.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path190664" />
+	<path style="fill:#158415" d="m 3703.1,1933.3 h 153.9 l -77,133.1 h -153.8 z" id="path190666" />
+	<path style="fill:#0c4b36" d="m 4126.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path192741" />
+	<path style="fill:#c9f8e8" d="m 4126.2,1800 76.9,133.3 -76.9,133.1 -76.9,-133.1 z" id="path192743" />
+	<path style="fill:#23dc9e" d="m 4203.1,1933.3 h 153.9 l -77,133.1 h -153.8 z" id="path192749" />
+	<path style="fill:#dfe0e3" d="m 5126.2,1800 76.9,133.3 -76.9,133 -76.9,-133 z" id="path197991" />
+	<path style="fill:#292b2f" d="m 5126.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path197993" />
+	<path style="fill:#6e737c" d="m 5203.1,1933.3 h 153.9 l -77,133 h -153.8 z" id="path197995" />
+	<rect style="fill:#5500ff" id="rect217344" width="300" height="300" x="500" y="1500" />
+	<path style="fill:#d9c9f8" d="m 646.2,1800 76.9,133.3 -76.9,133.3 -76.9,-133.3 z" id="path229119" />
+	<path style="fill:#19004a" d="m 646.2,1800 h 153.8 l 77,133.3 h -153.9 z" id="path229121" />
+	<path style="fill:#5500ff" d="m 723.1,1933.3 h 153.9 l -77,133.3 h -153.8 z" id="path229123" />
+	<rect style="fill:#ced2da" id="rect263112" width="300" height="300" x="5500" y="900" />
+	<rect style="fill:#adb2bd" id="rect263114" width="300" height="300" x="5500" y="1200" />
+	<rect style="fill:#6e737c" id="rect263116" width="300" height="300" x="5500" y="1500" />
+	<rect style="fill:#f9fafb" id="rect263118" width="300" height="300" x="5500" y="0" />
+	<rect style="fill:#e9ebef" id="rect263120" width="300" height="300" x="5500" y="300" />
+	<rect style="fill:#dfe2e7" id="rect263122" width="300" height="300" x="5500" y="600" />
+	<rect style="fill:#484d56" id="rect263124" width="300" height="300" x="5500" y="1800" />
+	<rect style="fill:#353941" id="rect263126" width="300" height="300" x="5500" y="2100" />
+	<rect style="fill:#212429" id="rect263128" width="300" height="300" x="5500" y="2400" />
+	<path style="fill:#c9f8c9" d="m 3626.2,1800 76.9,133.3 -76.9,133.1 -76.9,-133.1 z" id="path266165" />
+	<metadata id="metadata1">
+		<rdf:RDF>
+			<cc:License rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+				<cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+				<cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+				<cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+			</cc:License>
+			<cc:Work rdf:about="">
+				<cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+				<dc:title>Bootstrap Colors</dc:title>
+				<dc:creator>
+					<cc:Agent>
+						<dc:title>Ferenc Czirok</dc:title>
+					</cc:Agent>
+				</dc:creator>
+				<dc:publisher>
+					<cc:Agent>
+						<dc:title>Ferenc Czirok</dc:title>
+					</cc:Agent>
+				</dc:publisher>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+</svg>

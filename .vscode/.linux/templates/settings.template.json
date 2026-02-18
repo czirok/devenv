@@ -34,7 +34,9 @@
 		"txt": true,
 		"scss": true,
 		"glsl": true,
-		"xaml": true
+		"xaml": true,
+		"plist": true,
+		"svg": true
 	},
 
 	"explorer.fileNesting.enabled": true,
@@ -63,7 +65,9 @@
 		"svg",
 		"txt",
 		"glsl",
-		"xaml"
+		"xaml",
+		"plist",
+		"svg"
 	],
 	"color-highlight.markerType": "background",
 	"color-highlight.matchRgbWithNoFunction": true,
@@ -166,8 +170,7 @@
 		"source.fixAll.xml": "always",
 		"source.fixAll.yaml": "always",
 		"source.fixAll.json": "always",
-		"source.fixAll.glsl": "always",
-		"source.fixAll.xaml": "always"
+		"source.fixAll.glsl": "always"
 	},
 	// Silent the stylistic rules in you IDE, but still auto fix them
 	"eslint.rules.customizations": [],
@@ -194,12 +197,18 @@
 		"site.webmanifest": "jsonc",
 		"*.template.json": "jsonc",
 		"*.comp.glsl": "glsl",
-		"*.xaml": "xml"
+		"*.xaml": "xml",
+		"*.plist": "xml",
+		"*.svg": "xml"
 	},
 	"css.validate": false,
 	"stylelint.validate": ["scss"],
 	"markdownlint.config": {
-		"MD034": false
+		"MD034": false,
+		"MD010": {
+			"code_blocks": false,
+			"spaces_per_tab": 2
+		}
 	},
 	"[markdown]": {
 		"editor.formatOnSave": true,
@@ -218,9 +227,6 @@
 	},
 	"dotnet.formatting.organizeImportsOnFormat": true,
 	"omnisharp.enableEditorConfigSupport": true,
-	// "emmet.includeLanguages": {
-	// 	"aspnetcorerazor": "html"
-	// },
 	"[aspnetcorerazor]": {
 		"editor.formatOnSave": true,
 		"editor.tabSize": 3,
